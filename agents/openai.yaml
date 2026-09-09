@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Engineering"
+  short_description: "C++/Qt/QML architecture, implementation, review, and refactoring"
+  default_prompt: "按项目工程规则分析需求，选择合适模式，并给出可验证的设计、实现或审查结果。"
