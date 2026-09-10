@@ -1,0 +1,37 @@
+schema_version: "0.1"
+# 用 init 生成真实运行记录。以下数组为空时 check 必须阻断，不能直接当作通过示例。
+project: {name: example, profile: qt-project, revision: initial}
+workflow: new_project
+current_stage: requirement
+features: [cpp, qt]
+selected_components: []
+# - {id: superpowers.brainstorming, mode: reference}
+artifacts: []
+# - id: requirements
+#   revision: initial
+#   evidence: [{path: docs/requirements.md, sha256: <actual-lowercase-sha256>}]
+checks: []
+# - stage: requirement
+#   risk_id: REQ-001
+#   revision: initial
+#   status: unverified
+#   reason: "未明确验收条件。"
+#   discovered_by: architect
+#   components: []
+#   evidence: []
+issues: []
+# - id: ISSUE-001
+#   risk_id: PERF-002
+#   owner: architect
+#   discovered_stage: architecture
+#   discovered_by: engineering-guardian
+#   components: []
+#   location: src/frame_queue.h
+#   trigger: "生产持续快于消费"
+#   impact: "积压增长，尚未证明端到端延迟影响"
+#   severity: high
+#   status: open
+#   mitigation: "定义容量和丢弃策略，并做超载测试"
+#   revision: initial
+#   reason: "记录发现依据；验证后更新状态与证据"
+#   evidence: []

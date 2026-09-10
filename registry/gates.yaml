@@ -1,0 +1,12 @@
+schema_version: "0.1"
+kind: stage-gates
+description: "在请求阶段检查所有前置阶段；Risk Catalog 按阶段和特征选择检查项。"
+gates:
+  - {id: requirement, policy: workflow/requirement.md, artifacts: [project-facts, requirements]}
+  - {id: architecture, policy: workflow/architecture-gate.md, artifacts: [architecture]}
+  - {id: design, policy: workflow/architecture-gate.md, artifacts: [interfaces]}
+  - {id: plan, policy: workflow/implementation-gate.md, artifacts: [plan, test-plan]}
+  - {id: implementation, policy: workflow/implementation-gate.md, artifacts: [implementation]}
+  - {id: test, policy: workflow/test-gate.md, artifacts: [test-results]}
+  - {id: review, policy: workflow/review-gate.md, artifacts: [review]}
+  - {id: delivery, policy: workflow/review-gate.md, artifacts: [delivery]}

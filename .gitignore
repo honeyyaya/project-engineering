@@ -1,0 +1,4 @@
+# Local verification outputs only; project evidence stays versioned.
+__pycache__/
+.guard-venv/
+evaluations/guard/qt-queue/build/

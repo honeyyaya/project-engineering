@@ -1,0 +1,2 @@
+# Evidence refers to exact file bytes; checkout must not rewrite demo line endings.
+/evaluations/guard/qt-queue/** -text

@@ -1,21 +1,35 @@
 stack: project-engineering
-version: "0.2"
+version: "0.3"
 status: experimental
-last_updated: "2026-09-09"
+last_updated: "2026-09-10"
 
 manager:
   name: engineering-governance-manager
   responsibility: "根据项目上下文、任务阶段、风险和门禁选择并编排能力"
-  roles: [architect, engineering-standards, project-structure-manager, workflow-manager, test-engineer, code-reviewer, technical-debt-manager, adr-manager]
+  roles: [codebase-explorer, architect, developer, engineering-standards, project-structure-manager, workflow-manager, test-engineer, code-reviewer, technical-debt-manager, adr-manager, engineering-guardian]
 foundation:
   integration: integrations/superpowers/manifest.yaml
   compatibility: integrations/superpowers/compatibility.yaml
-  required_components: [superpowers.brainstorming, superpowers.writing-plans, superpowers.executing-plans, superpowers.test-driven-development, superpowers.systematic-debugging, superpowers.verification-before-completion, superpowers.requesting-code-review, superpowers.receiving-code-review]
+  candidate_components: [superpowers.brainstorming, superpowers.writing-plans, superpowers.executing-plans, superpowers.test-driven-development, superpowers.systematic-debugging, superpowers.verification-before-completion, superpowers.requesting-code-review, superpowers.receiving-code-review]
+guard:
+  roles: registry/roles.yaml
+  risks: registry/risks.yaml
+  gates: registry/gates.yaml
+  workflow: workflow/risk-discovery.md
+  record: .engineering/run.yaml
+  cross_cutting_roles: [codebase-explorer, engineering-guardian]
+  component_policy: {s1_modes: [reference, evaluation], default_maturity: S4, auto_promotion: false}
 profiles:
   cpp: profiles/cpp-project.yaml
   qt: profiles/qt-project.yaml
 
 role_components:
+  codebase-explorer:
+    local: [roles/codebase-explorer.md]
+  developer:
+    local: [roles/developer.md]
+  engineering-guardian:
+    local: [roles/engineering-guardian.md, registry/risks.yaml, registry/gates.yaml, workflow/risk-discovery.md]
   architect:
     local: [governance/architecture, governance/design]
     references: [byliu-architecture-review, addy.api-and-interface-design]
@@ -40,6 +54,10 @@ role_components:
     references: [addy.documentation-and-adrs]
 
 default_workflows:
+  new_project:
+    entry: workflow/new-project.md
+    stages: [requirement, architecture, design, plan, implementation, test, review, delivery]
+    roles: [codebase-explorer, workflow-manager, architect, developer, engineering-standards, project-structure-manager, test-engineer, code-reviewer, adr-manager, engineering-guardian]
   feature:
     stages: [requirement, architecture, design, plan, implementation, test, review, delivery]
     roles: [workflow-manager, architect, engineering-standards, project-structure-manager, test-engineer, code-reviewer, adr-manager]
@@ -68,7 +86,7 @@ gates:
     path: workflow/review-gate.md
 
 promotion:
-  rule: "No upstream component is Core before S2 evaluation."
+  rule: "S1 is reference/evaluation only; S2/S3 supply evidence toward promotion; only S4 is default Core."
   target: S2
   candidates: [superpowers, addy-agent-skills, fluidframework-review, byliu-architecture-review]
   required_cases: [evaluations/architecture/greenfield-module-change.md, evaluations/cpp/qt-review.md, evaluations/refactoring/behavior-preservation.md]

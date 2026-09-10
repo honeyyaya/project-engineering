@@ -1,0 +1,11 @@
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.6+a918ceb31
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  Checking Build System
+  Building Custom Rule D:/Mirror/Projects/project-engineering/evaluations/guard/qt-queue/CMakeLists.txt
+  queue_tests.cpp
+  Building Custom Rule D:/Mirror/Projects/project-engineering/evaluations/guard/qt-queue/CMakeLists.txt
+  queue_tests.cpp
+  queue_negative_control.vcxproj -> D:\Mirror\Projects\project-engineering\evaluations\guard\qt-queue\build\Release\queue_negative_control.exe
+  queue_tests.vcxproj -> D:\Mirror\Projects\project-engineering\evaluations\guard\qt-queue\build\Release\queue_tests.exe
+  Building Custom Rule D:/Mirror/Projects/project-engineering/evaluations/guard/qt-queue/CMakeLists.txt

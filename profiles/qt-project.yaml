@@ -1,7 +1,7 @@
 profile: qt-project
-version: "0.1"
+version: "0.2"
 status: experimental
-description: "面向 C++/Qt/QML 产品仓库的默认工程能力组合。"
+description: "面向 C++/Qt/QML 产品仓库的实验工程能力组合。"
 extends: [cpp-project]
 domains: [architecture, module-boundaries, cpp, qt, qml, testing, review, migration, documentation]
 standards:
@@ -14,12 +14,13 @@ standards:
   - policies/dependency-rules.md
   - policies/layering.md
 skills:
-  always: [addy.context-engineering, addy.constraint-driven-development, addy.api-and-interface-design, addy.source-driven-development, addy.code-simplification, addy.code-review-and-quality, addy.documentation-and-adrs]
+  candidates: [addy.context-engineering, addy.constraint-driven-development, addy.api-and-interface-design, addy.source-driven-development, addy.code-simplification, addy.code-review-and-quality, addy.documentation-and-adrs]
   conditional: [addy.interview-me, addy.idea-refine, addy.spec-driven-development, addy.incremental-implementation, addy.doubt-driven-development, addy.deprecation-and-migration]
 superpowers:
-  required: [superpowers.brainstorming, superpowers.writing-plans, superpowers.executing-plans, superpowers.test-driven-development, superpowers.systematic-debugging, superpowers.verification-before-completion, superpowers.requesting-code-review, superpowers.receiving-code-review]
+  candidates: [superpowers.brainstorming, superpowers.writing-plans, superpowers.executing-plans, superpowers.test-driven-development, superpowers.systematic-debugging, superpowers.verification-before-completion, superpowers.requesting-code-review, superpowers.receiving-code-review]
   conditional: [superpowers.subagent-driven-development, superpowers.dispatching-parallel-agents, superpowers.using-git-worktrees, superpowers.finishing-a-development-branch]
 workflows:
+  new_project: workflow/new-project.md
   feature: stack/project-engineering.yaml#default_workflows.feature
   behavior_preserving_refactor: stack/project-engineering.yaml#default_workflows.behavior_preserving_refactor
   major_architecture_change: stack/project-engineering.yaml#default_workflows.major_architecture_change
@@ -33,8 +34,14 @@ quality_gates:
 outputs:
   required: [requirements-brief, implementation-plan, TEST_PLAN, REVIEW, verification-summary]
   conditional: [ADR, architecture-record, migration-plan, technical-debt-entry]
-  evidence_root: evaluations/
+  evidence_root: .engineering/
+guard:
+  base_features: [cpp, qt]
+  risk_catalog: registry/risks.yaml
+  gate_catalog: registry/gates.yaml
+  component_policy: {s1_modes: [reference, evaluation], default_maturity: S4}
 activation:
   project_facts: {language: [cpp], frameworks: [qt, qml]}
   required_inputs: [build-entry, test-entry, module-map, compatibility-targets]
+  bootstrap: "新建项目允许前三项为 planned；implementation/test 阶段补齐实际入口、模块与执行证据。"
   default_risk: medium

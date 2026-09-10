@@ -22,8 +22,9 @@ metadata:
 1. 读取项目事实：目录、构建入口、测试、运行时约束、兼容性要求和现有 ADR。
 2. 判断阶段和风险，激活一个或多个角色；Workflow Manager 负责去重、排序和冲突裁决。
 3. 从 [registry/skills.yaml](registry/skills.yaml) 和 [registry/compatibility.yaml](registry/compatibility.yaml) 选择 Skill；再按 [Profile](profiles/qt-project.yaml) 和 [stack/project-engineering.yaml](stack/project-engineering.yaml) 组装能力。固定的 `sources/` 快照只作为原始证据。
-4. 按门禁推进：Requirement -> Architecture -> Design -> Plan -> Implementation -> Test -> Review -> Delivery。
-5. 将结论写入稳定产物，并把证据回填到 [evaluations/](evaluations/)。未经过 S2 评估的组件不能成为默认 Core。
+4. 按门禁推进：Requirement -> Architecture -> Design -> Plan -> Implementation -> Test -> Review -> Delivery。新建项目先走 [Bootstrap](workflow/new-project.md)，空目录中的构建/测试入口先记录为 planned。
+5. 每个阶段由 [Engineering Guardian](roles/engineering-guardian.md) 按 [Risk Catalog](registry/risks.yaml) 发现遗漏，把实际风险和证据保存到目标项目 `.engineering/run.yaml`；按 [风险发现流程](workflow/risk-discovery.md) 检查当前与前置门禁。
+6. 目标项目保留原始产物，脱敏评估结论回填到 [evaluations/](evaluations/)。S1 组件只作 reference 或显式 evaluation；只有 S4 才能成为默认 Core，脚本通过不会自动晋级。
 
 ## 阶段、角色与门禁
 
@@ -52,6 +53,9 @@ metadata:
 - Code Reviewer：读取 [governance/review/](governance/review/)；需要时加载安全增强 skill 和上游审查基准。
 - Technical Debt Manager：读取 [roles/technical-debt-manager.md](roles/technical-debt-manager.md) 和 [technical-debt/registry.yaml](technical-debt/registry.yaml)。
 - ADR Manager：读取 [templates/ADR.md](templates/ADR.md) 和现有 ADR，确保决策、迁移和回滚可追溯。
+- Codebase Explorer：读取 [职责](roles/codebase-explorer.md)，建立工具链、项目基线与未知项清单。
+- Developer：读取 [职责](roles/developer.md)，实现已确定的范围并提交实际验证证据。
+- Engineering Guardian：读取 [职责](roles/engineering-guardian.md)，跨阶段汇总遗漏、风险、责任和证据；不重复其他角色的专项分析。
 
 Superpowers 通过 [integrations/superpowers/](integrations/superpowers/) 作为开发流程底座，负责怎么开发；Addy Agent Skills 通过 Registry 作为工程质量层，负责按照什么工程标准开发。FluidFramework review 是审查基准，byliu 是重大架构决策参考。上游原始内容只从 `sources/` 的固定快照加载，来源流行度不能替代代码、构建、测试和项目证据。
 

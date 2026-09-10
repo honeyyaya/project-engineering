@@ -8,6 +8,7 @@ adoption_modes:
   conditional: "满足项目、Harness 或风险条件时启用。"
   reject: "明确不采用并记录原因。"
 maturity_levels: {S0: Candidate, S1: Reviewed, S2: Tested, S3: Proven, S4: Core}
+activation_policy: "profile_candidate 仅表示 Profile 候选；S1 显式 reference/evaluation，只有 S4 可 default。"
 
 skills:
   - id: superpowers.brainstorming
@@ -17,7 +18,7 @@ skills:
     lifecycle: [requirement, architecture, design]
     adoption: adopt
     project_engineering: [workflow.requirement, governance.architecture]
-    activation: {when: "需求有歧义或方案空间较大", profile_default: true}
+    activation: {when: "需求有歧义或方案空间较大", profile_candidate: true}
     composition: {role: workflow-manager, pairs_with: [addy.interview-me, addy.idea-refine], outputs: [requirements-brief, decision-record]}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -28,7 +29,7 @@ skills:
     lifecycle: [plan]
     adoption: adopt
     project_engineering: [workflow.implementation-gate, templates.TEST_PLAN]
-    activation: {when: "实现包含多个步骤、模块或迁移风险", profile_default: true}
+    activation: {when: "实现包含多个步骤、模块或迁移风险", profile_candidate: true}
     composition: {role: workflow-manager, pairs_with: [addy.spec-driven-development, addy.incremental-implementation], outputs: [implementation-plan]}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -39,7 +40,7 @@ skills:
     lifecycle: [implementation]
     adoption: adopt
     project_engineering: [workflow.implementation-gate]
-    activation: {when: "已有经过审查的实施计划", profile_default: true}
+    activation: {when: "已有经过审查的实施计划", profile_candidate: true}
     composition: {role: workflow-manager, requires: [superpowers.writing-plans], pairs_with: [superpowers.test-driven-development], outputs: [execution-log]}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -50,7 +51,7 @@ skills:
     lifecycle: [plan, implementation, test]
     adoption: adopt
     project_engineering: [workflow.test-gate, roles.test-engineer]
-    activation: {when: "新增行为、修复缺陷或需要行为保持证据", profile_default: true}
+    activation: {when: "新增行为、修复缺陷或需要行为保持证据", profile_candidate: true}
     composition: {role: test-engineer, primary_for: [addy.test-driven-development], outputs: [failing-test, passing-test, regression-evidence]}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -61,7 +62,7 @@ skills:
     lifecycle: [implementation, test, review]
     adoption: adopt
     project_engineering: [workflow.test-gate, governance.review]
-    activation: {when: "测试失败、运行时异常或根因未知", profile_default: true}
+    activation: {when: "测试失败、运行时异常或根因未知", profile_candidate: true}
     composition: {role: test-engineer, primary_for: [addy.debugging-and-error-recovery], requires: [superpowers.verification-before-completion], outputs: [root-cause-record, fix-evidence]}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -72,7 +73,7 @@ skills:
     lifecycle: [test, review, delivery]
     adoption: adopt
     project_engineering: [workflow.review-gate, workflow.test-gate]
-    activation: {when: "准备宣称任务完成或交付可用", profile_default: true}
+    activation: {when: "准备宣称任务完成或交付可用", profile_candidate: true}
     composition: {role: workflow-manager, wraps: [superpowers.test-driven-development, governance.review], outputs: [verification-summary]}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -83,7 +84,7 @@ skills:
     lifecycle: [review]
     adoption: adopt
     project_engineering: [workflow.review-gate, templates.REVIEW]
-    activation: {when: "实现完成且需要独立审查", profile_default: true}
+    activation: {when: "实现完成且需要独立审查", profile_candidate: true}
     composition: {role: code-reviewer, pairs_with: [addy.code-review-and-quality, fluidframework-review], outputs: [review-request]}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -94,7 +95,7 @@ skills:
     lifecycle: [review, delivery]
     adoption: adopt
     project_engineering: [workflow.review-gate]
-    activation: {when: "收到审查意见或质量门反馈", profile_default: true}
+    activation: {when: "收到审查意见或质量门反馈", profile_candidate: true}
     composition: {role: code-reviewer, requires: [superpowers.verification-before-completion], outputs: [review-resolution]}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -105,7 +106,7 @@ skills:
     lifecycle: [plan, implementation, review]
     adoption: conditional
     project_engineering: [workflow.routing]
-    activation: {when: "Harness 支持子 Agent 且任务可安全拆分", profile_default: false}
+    activation: {when: "Harness 支持子 Agent 且任务可安全拆分", profile_candidate: false}
     composition: {role: workflow-manager, pairs_with: [superpowers.executing-plans, superpowers.requesting-code-review], constraints: [isolated-context, explicit-contract]}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -116,7 +117,7 @@ skills:
     lifecycle: [plan, implementation, review]
     adoption: conditional
     project_engineering: [workflow.routing]
-    activation: {when: "任务之间无共享写入和顺序依赖", profile_default: false}
+    activation: {when: "任务之间无共享写入和顺序依赖", profile_candidate: false}
     composition: {role: workflow-manager, requires: [superpowers.subagent-driven-development], constraints: [independent-work-units]}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -127,7 +128,7 @@ skills:
     lifecycle: [plan, implementation]
     adoption: conditional
     project_engineering: [workflow.routing]
-    activation: {when: "需要并行分支或 Harness 没有原生隔离", profile_default: false}
+    activation: {when: "需要并行分支或 Harness 没有原生隔离", profile_candidate: false}
     composition: {role: workflow-manager, pairs_with: [superpowers.finishing-a-development-branch], harness_dependent: true}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -138,7 +139,7 @@ skills:
     lifecycle: [delivery]
     adoption: conditional
     project_engineering: [workflow.review-gate]
-    activation: {when: "Harness 授权合并、推送或创建 PR", profile_default: false}
+    activation: {when: "Harness 授权合并、推送或创建 PR", profile_candidate: false}
     composition: {role: workflow-manager, requires: [superpowers.verification-before-completion], harness_dependent: true}
     maturity: S1
     evidence: sources/github/superpowers/audit.md
@@ -150,7 +151,7 @@ skills:
     lifecycle: [requirement]
     adoption: compose
     project_engineering: [workflow.requirement]
-    activation: {when: "需求信息不足且需要结构化追问", profile_default: true}
+    activation: {when: "需求信息不足且需要结构化追问", profile_candidate: true}
     composition: {role: workflow-manager, primary: superpowers.brainstorming, outputs: [clarified-requirements]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -161,7 +162,7 @@ skills:
     lifecycle: [requirement, architecture]
     adoption: compose
     project_engineering: [workflow.requirement, governance.architecture]
-    activation: {when: "想法未形成可执行问题定义", profile_default: true}
+    activation: {when: "想法未形成可执行问题定义", profile_candidate: true}
     composition: {role: architect, primary: superpowers.brainstorming, outputs: [problem-statement, scope]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -172,7 +173,7 @@ skills:
     lifecycle: [requirement, design, plan]
     adoption: compose
     project_engineering: [workflow.requirement, workflow.implementation-gate]
-    activation: {when: "公共接口、协议或持久化格式变更", profile_default: true}
+    activation: {when: "公共接口、协议或持久化格式变更", profile_candidate: true}
     composition: {role: architect, primary: superpowers.writing-plans, outputs: [specification, acceptance-criteria]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -183,7 +184,7 @@ skills:
     lifecycle: [requirement, architecture, design, implementation]
     adoption: adopt
     project_engineering: [policies, governance.architecture, workflow.routing]
-    activation: {when: "存在平台、ABI、线程、性能、安全或兼容性约束", profile_default: true}
+    activation: {when: "存在平台、ABI、线程、性能、安全或兼容性约束", profile_candidate: true}
     composition: {role: engineering-standards, informs: [standards, quality_gates], outputs: [constraint-register]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -194,7 +195,7 @@ skills:
     lifecycle: [requirement, architecture, implementation, review]
     adoption: adopt
     project_engineering: [SKILL, PROJECT_CONTEXT, workflow.routing]
-    activation: {when: "任务涉及陌生仓库、跨模块关系或上下文容易丢失", profile_default: true}
+    activation: {when: "任务涉及陌生仓库、跨模块关系或上下文容易丢失", profile_candidate: true}
     composition: {role: workflow-manager, precedes: [superpowers.brainstorming, superpowers.writing-plans], outputs: [project-context-brief]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -205,7 +206,7 @@ skills:
     lifecycle: [requirement, architecture, design, review]
     adoption: adopt
     project_engineering: [registry, evaluations, governance]
-    activation: {when: "需要外部规范、上游实现或事实依据", profile_default: true}
+    activation: {when: "需要外部规范、上游实现或事实依据", profile_candidate: true}
     composition: {role: architect, complements: [addy.context-engineering], outputs: [source-log, evidence-map]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -216,7 +217,7 @@ skills:
     lifecycle: [architecture, design, review]
     adoption: adopt
     project_engineering: [governance/design, policies, workflow/architecture-gate]
-    activation: {when: "新增或修改公共 API、模块接口、信号槽或 QML 暴露面", profile_default: true}
+    activation: {when: "新增或修改公共 API、模块接口、信号槽或 QML 暴露面", profile_candidate: true}
     composition: {role: architect, references: [byliu-architecture-review], outputs: [interface-contract, compatibility-notes]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -227,7 +228,7 @@ skills:
     lifecycle: [plan, implementation, delivery]
     adoption: compose
     project_engineering: [workflow.implementation-gate, technical-debt]
-    activation: {when: "变更跨多个模块或需要降低回滚成本", profile_default: true}
+    activation: {when: "变更跨多个模块或需要降低回滚成本", profile_candidate: true}
     composition: {role: project-structure-manager, primary: superpowers.executing-plans, outputs: [incremental-slices, rollback-points]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -238,7 +239,7 @@ skills:
     lifecycle: [design, implementation, test, review]
     adoption: compose
     project_engineering: [workflow.test-gate, governance.review]
-    activation: {when: "风险高、假设多或失败代价大", profile_default: false}
+    activation: {when: "风险高、假设多或失败代价大", profile_candidate: false}
     composition: {role: test-engineer, complements: [superpowers.systematic-debugging, superpowers.verification-before-completion], outputs: [assumption-log, edge-case-tests]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -249,7 +250,7 @@ skills:
     lifecycle: [review]
     adoption: compose
     project_engineering: [governance/review, workflow.review-gate]
-    activation: {when: "需要质量审查或变更风险较高", profile_default: true}
+    activation: {when: "需要质量审查或变更风险较高", profile_candidate: true}
     composition: {role: code-reviewer, primary: superpowers.requesting-code-review, benchmarks: [fluidframework-review]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -260,7 +261,7 @@ skills:
     lifecycle: [implementation, review]
     adoption: adopt
     project_engineering: [policies/complexity, governance/review]
-    activation: {when: "行为保持重构或复杂度超过项目阈值", profile_default: true}
+    activation: {when: "行为保持重构或复杂度超过项目阈值", profile_candidate: true}
     composition: {role: engineering-standards, pairs_with: [superpowers.test-driven-development, superpowers.verification-before-completion], outputs: [simplification-diff, behavior-evidence]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -271,7 +272,7 @@ skills:
     lifecycle: [architecture, implementation, delivery]
     adoption: adopt
     project_engineering: [governance/architecture, technical-debt, workflow.review-gate]
-    activation: {when: "替换公共 API、模块、依赖或持久化格式", profile_default: true}
+    activation: {when: "替换公共 API、模块、依赖或持久化格式", profile_candidate: true}
     composition: {role: technical-debt-manager, requires: [addy.api-and-interface-design, superpowers.verification-before-completion], outputs: [migration-plan, deprecation-record]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -282,7 +283,7 @@ skills:
     lifecycle: [architecture, design, delivery]
     adoption: adopt
     project_engineering: [templates/ADR, templates/ARCHITECTURE, roles/adr-manager]
-    activation: {when: "存在架构取舍、公共约束、迁移或长期维护影响", profile_default: true}
+    activation: {when: "存在架构取舍、公共约束、迁移或长期维护影响", profile_candidate: true}
     composition: {role: adr-manager, complements: [addy.source-driven-development], outputs: [ADR, architecture-record]}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -293,7 +294,7 @@ skills:
     lifecycle: [implementation, test, review]
     adoption: reference
     project_engineering: [workflow.test-gate]
-    activation: {when: "需要比较不同调试方法", profile_default: false}
+    activation: {when: "需要比较不同调试方法", profile_candidate: false}
     composition: {primary: superpowers.systematic-debugging, reference_only: true, reason: "避免重复维护调试主流程"}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md
@@ -304,7 +305,7 @@ skills:
     lifecycle: [implementation, test]
     adoption: reference
     project_engineering: [workflow.test-gate]
-    activation: {when: "需要比较测试方法", profile_default: false}
+    activation: {when: "需要比较测试方法", profile_candidate: false}
     composition: {primary: superpowers.test-driven-development, reference_only: true, reason: "Superpowers 是流程底座"}
     maturity: S1
     evidence: sources/github/addy-agent-skills/audit.md

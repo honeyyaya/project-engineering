@@ -1,0 +1,16 @@
+Internal ctest changing into directory: D:/Mirror/Projects/project-engineering/evaluations/guard/qt-queue/build
+Test project D:/Mirror/Projects/project-engineering/evaluations/guard/qt-queue/build
+    Start 1: queue_fifo
+1/5 Test #1: queue_fifo .......................   Passed    0.08 sec
+    Start 2: queue_capacity
+2/5 Test #2: queue_capacity ...................   Passed    0.06 sec
+    Start 3: queue_empty
+3/5 Test #3: queue_empty ......................   Passed    0.06 sec
+    Start 4: queue_overload
+4/5 Test #4: queue_overload ...................   Passed    0.06 sec
+    Start 5: queue_zero
+5/5 Test #5: queue_zero .......................   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 5
+
+Total Test time (real) =   0.33 sec

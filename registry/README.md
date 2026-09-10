@@ -22,6 +22,9 @@ S4 Core       进入 Project Engineering 默认主流程
 - `skills.yaml`：Skill 级主索引、采用策略、激活条件和组合关系
 - `compatibility.yaml`：Superpowers 与 Addy 的兼容矩阵和重复能力裁决
 - `capabilities.yaml`：能力矩阵、证据路径和重叠关系
+- `roles.yaml`：本地角色 ID 和职责文件。
+- `risks.yaml`：八类风险的可复用发现规则、阶段、特征、责任与证据要求。
+- `gates.yaml`：各阶段的必要产物；实际风险状态、检查和原始证据保存在目标项目 `.engineering/`。
 - `architecture.yaml`、`coding.yaml`、`review.yaml`、`testing.yaml`、`refactoring.yaml`、`security.yaml`：按能力域登记可组合组件；组件 ID 供 Stack 和 Workflow 引用
 
 ## 更新规则

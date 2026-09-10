@@ -1,0 +1,10 @@
+Captured 2026-09-10 from local toolchain; compiler/architecture details in configure.txt.
+cmake version 3.25.1
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Qt version: 5.15.6
+Qt prefix: C:/Qt/qt-5.15.6-compiled-msvc2017-x86/qt-5.15.6-compiled-msvc2017-x86
+qqueue.h: C:/Qt/qt-5.15.6-compiled-msvc2017-x86/qt-5.15.6-compiled-msvc2017-x86/include/QtCore/qqueue.h
+qqueue.h sha256: 91609983d1e0d175fbecccbab24a2d1131555a105ffd7b40e70ddb6a522b9b11
+Local header declares commercial, LGPL v3 and GPL alternatives; no distribution license audit performed.
+No Qt headers, sources or runtime binaries are included in this delivery.

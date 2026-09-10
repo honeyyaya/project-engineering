@@ -1,0 +1,512 @@
+schema_version: '0.1'
+project:
+  name: qt-queue
+  profile: qt-project
+  revision: qt-queue-20260910-r1
+workflow: new_project
+current_stage: delivery
+features:
+- cpp
+- qt
+- queue
+selected_components: []
+artifacts:
+- id: project-facts
+  revision: qt-queue-20260910-r1
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: .engineering/evidence/toolchain.txt
+    sha256: 16e7dc11bd29bc7fead2b2195492ea6e85f927fa8301d42fa325e3321932e093
+  - path: .engineering/evidence/configure.txt
+    sha256: a581680803786a12adb19c7013e5469e46ca407dfac7f50e6cdd529de7e53f4c
+- id: requirements
+  revision: qt-queue-20260910-r1
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+- id: architecture
+  revision: qt-queue-20260910-r1
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: CMakeLists.txt
+    sha256: cbc8f36236b9e771d8521278f9a5b10c0c49e041a2411dab71b37fbb53613705
+- id: interfaces
+  revision: qt-queue-20260910-r1
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+- id: plan
+  revision: qt-queue-20260910-r1
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+- id: test-plan
+  revision: qt-queue-20260910-r1
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+- id: implementation
+  revision: qt-queue-20260910-r1
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+  - path: CMakeLists.txt
+    sha256: cbc8f36236b9e771d8521278f9a5b10c0c49e041a2411dab71b37fbb53613705
+  - path: .engineering/evidence/build.txt
+    sha256: e89c9c9ad0291dfbdbdb73ee8d8de08f83e9af82e6cd12327e78bcd18b9b48cf
+- id: test-results
+  revision: qt-queue-20260910-r1
+  evidence:
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+  - path: .engineering/evidence/ctest.txt
+    sha256: 7316b429624771057c82f8e1ce451b5497332bf45717322ff571f2026d5cd0d0
+  - path: .engineering/evidence/negative-control.txt
+    sha256: 0a350753c93580e0503a25049cff8a8f4700a841a29db7932eed2ad7e12e3733
+  - path: .engineering/evidence/bounded-queue.txt
+    sha256: 23e8f59cef61c44ee083e16a6a1b489cfd0bd4589e9909d63a77a89bd8e8d075
+- id: review
+  revision: qt-queue-20260910-r1
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+  - path: CMakeLists.txt
+    sha256: cbc8f36236b9e771d8521278f9a5b10c0c49e041a2411dab71b37fbb53613705
+  - path: negative-control/frame_queue.h
+    sha256: 265ba3c22cdab4d2996bfe3e7fce494a9dbb4dd80e4beff33a1c5e89ce4639da
+- id: delivery
+  revision: qt-queue-20260910-r1
+  evidence:
+  - path: README.md
+    sha256: 10943ca486a5b38868b11c76d925443dca99e4aff626e54427f17f33db17a6c3
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: .engineering/evidence/toolchain.txt
+    sha256: 16e7dc11bd29bc7fead2b2195492ea6e85f927fa8301d42fa325e3321932e093
+  - path: .engineering/evidence/build.txt
+    sha256: e89c9c9ad0291dfbdbdb73ee8d8de08f83e9af82e6cd12327e78bcd18b9b48cf
+  - path: .engineering/evidence/ctest.txt
+    sha256: 7316b429624771057c82f8e1ce451b5497332bf45717322ff571f2026d5cd0d0
+checks:
+- stage: requirement
+  risk_id: REQ-001
+  discovered_by: architect
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 工程记录明确容量、FIFO、满载丢弃、空输出、非法参数及验收映射；不承诺视频/延迟/并发。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+- stage: design
+  risk_id: REQ-001
+  discovered_by: architect
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 工程记录明确容量、FIFO、满载丢弃、空输出、非法参数及验收映射；不承诺视频/延迟/并发。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+- stage: architecture
+  risk_id: ARCH-001
+  discovered_by: project-structure-manager
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 两个程序各自依赖一份实现和 Qt5::Core，共用测试；CMake 目标无反向或循环依赖。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: CMakeLists.txt
+    sha256: cbc8f36236b9e771d8521278f9a5b10c0c49e041a2411dab71b37fbb53613705
+- stage: design
+  risk_id: ARCH-001
+  discovered_by: project-structure-manager
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 两个程序各自依赖一份实现和 Qt5::Core，共用测试；CMake 目标无反向或循环依赖。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: CMakeLists.txt
+    sha256: cbc8f36236b9e771d8521278f9a5b10c0c49e041a2411dab71b37fbb53613705
+- stage: review
+  risk_id: ARCH-001
+  discovered_by: project-structure-manager
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 两个程序各自依赖一份实现和 Qt5::Core，共用测试；CMake 目标无反向或循环依赖。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: CMakeLists.txt
+    sha256: cbc8f36236b9e771d8521278f9a5b10c0c49e041a2411dab71b37fbb53613705
+- stage: design
+  risk_id: CODE-001
+  discovered_by: engineering-standards
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已审查值成员 QQueue<int> 与线程内使用契约，无裸指针所有权或 QObject 回调；不覆盖真实帧资源。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+- stage: implementation
+  risk_id: CODE-001
+  discovered_by: engineering-standards
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已审查值成员 QQueue<int> 与线程内使用契约，无裸指针所有权或 QObject 回调；不覆盖真实帧资源。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+- stage: review
+  risk_id: CODE-001
+  discovered_by: engineering-standards
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已审查值成员 QQueue<int> 与线程内使用契约，无裸指针所有权或 QObject 回调；不覆盖真实帧资源。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+- stage: requirement
+  risk_id: DEP-001
+  discovered_by: codebase-explorer
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已核对本机 Qt/MSVC/Win32/CMake 并实际构建；仅本地源码实验，未分发 SDK，发布与供应链结论待真实发布任务核验。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: .engineering/evidence/toolchain.txt
+    sha256: 16e7dc11bd29bc7fead2b2195492ea6e85f927fa8301d42fa325e3321932e093
+  - path: .engineering/evidence/configure.txt
+    sha256: a581680803786a12adb19c7013e5469e46ca407dfac7f50e6cdd529de7e53f4c
+  - path: .engineering/evidence/build.txt
+    sha256: e89c9c9ad0291dfbdbdb73ee8d8de08f83e9af82e6cd12327e78bcd18b9b48cf
+- stage: architecture
+  risk_id: DEP-001
+  discovered_by: codebase-explorer
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已核对本机 Qt/MSVC/Win32/CMake 并实际构建；仅本地源码实验，未分发 SDK，发布与供应链结论待真实发布任务核验。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: .engineering/evidence/toolchain.txt
+    sha256: 16e7dc11bd29bc7fead2b2195492ea6e85f927fa8301d42fa325e3321932e093
+  - path: .engineering/evidence/configure.txt
+    sha256: a581680803786a12adb19c7013e5469e46ca407dfac7f50e6cdd529de7e53f4c
+  - path: .engineering/evidence/build.txt
+    sha256: e89c9c9ad0291dfbdbdb73ee8d8de08f83e9af82e6cd12327e78bcd18b9b48cf
+- stage: implementation
+  risk_id: DEP-001
+  discovered_by: codebase-explorer
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已核对本机 Qt/MSVC/Win32/CMake 并实际构建；仅本地源码实验，未分发 SDK，发布与供应链结论待真实发布任务核验。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: .engineering/evidence/toolchain.txt
+    sha256: 16e7dc11bd29bc7fead2b2195492ea6e85f927fa8301d42fa325e3321932e093
+  - path: .engineering/evidence/configure.txt
+    sha256: a581680803786a12adb19c7013e5469e46ca407dfac7f50e6cdd529de7e53f4c
+  - path: .engineering/evidence/build.txt
+    sha256: e89c9c9ad0291dfbdbdb73ee8d8de08f83e9af82e6cd12327e78bcd18b9b48cf
+- stage: delivery
+  risk_id: DEP-001
+  discovered_by: codebase-explorer
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已核对本机 Qt/MSVC/Win32/CMake 并实际构建；仅本地源码实验，未分发 SDK，发布与供应链结论待真实发布任务核验。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: .engineering/evidence/toolchain.txt
+    sha256: 16e7dc11bd29bc7fead2b2195492ea6e85f927fa8301d42fa325e3321932e093
+  - path: .engineering/evidence/configure.txt
+    sha256: a581680803786a12adb19c7013e5469e46ca407dfac7f50e6cdd529de7e53f4c
+  - path: .engineering/evidence/build.txt
+    sha256: e89c9c9ad0291dfbdbdb73ee8d8de08f83e9af82e6cd12327e78bcd18b9b48cf
+- stage: plan
+  risk_id: TEST-001
+  discovered_by: test-engineer
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 5 个显式失败码测试映射验收；相同 overload 测试区分故意无界对照与有界实现。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+  - path: .engineering/evidence/ctest.txt
+    sha256: 7316b429624771057c82f8e1ce451b5497332bf45717322ff571f2026d5cd0d0
+  - path: .engineering/evidence/negative-control.txt
+    sha256: 0a350753c93580e0503a25049cff8a8f4700a841a29db7932eed2ad7e12e3733
+  - path: .engineering/evidence/bounded-queue.txt
+    sha256: 23e8f59cef61c44ee083e16a6a1b489cfd0bd4589e9909d63a77a89bd8e8d075
+- stage: test
+  risk_id: TEST-001
+  discovered_by: test-engineer
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 5 个显式失败码测试映射验收；相同 overload 测试区分故意无界对照与有界实现。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+  - path: .engineering/evidence/ctest.txt
+    sha256: 7316b429624771057c82f8e1ce451b5497332bf45717322ff571f2026d5cd0d0
+  - path: .engineering/evidence/negative-control.txt
+    sha256: 0a350753c93580e0503a25049cff8a8f4700a841a29db7932eed2ad7e12e3733
+  - path: .engineering/evidence/bounded-queue.txt
+    sha256: 23e8f59cef61c44ee083e16a6a1b489cfd0bd4589e9909d63a77a89bd8e8d075
+- stage: review
+  risk_id: TEST-001
+  discovered_by: test-engineer
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 5 个显式失败码测试映射验收；相同 overload 测试区分故意无界对照与有界实现。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+  - path: .engineering/evidence/ctest.txt
+    sha256: 7316b429624771057c82f8e1ce451b5497332bf45717322ff571f2026d5cd0d0
+  - path: .engineering/evidence/negative-control.txt
+    sha256: 0a350753c93580e0503a25049cff8a8f4700a841a29db7932eed2ad7e12e3733
+  - path: .engineering/evidence/bounded-queue.txt
+    sha256: 23e8f59cef61c44ee083e16a6a1b489cfd0bd4589e9909d63a77a89bd8e8d075
+- stage: architecture
+  risk_id: PERF-002
+  discovered_by: architect
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已明确容量 4 与丢弃最旧策略；无消费持续生产 10000 条的对照失败、有界实现通过。只验证条目上限。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+  - path: negative-control/frame_queue.h
+    sha256: 265ba3c22cdab4d2996bfe3e7fce494a9dbb4dd80e4beff33a1c5e89ce4639da
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+  - path: .engineering/evidence/negative-control.txt
+    sha256: 0a350753c93580e0503a25049cff8a8f4700a841a29db7932eed2ad7e12e3733
+  - path: .engineering/evidence/bounded-queue.txt
+    sha256: 23e8f59cef61c44ee083e16a6a1b489cfd0bd4589e9909d63a77a89bd8e8d075
+- stage: design
+  risk_id: PERF-002
+  discovered_by: architect
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已明确容量 4 与丢弃最旧策略；无消费持续生产 10000 条的对照失败、有界实现通过。只验证条目上限。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+  - path: negative-control/frame_queue.h
+    sha256: 265ba3c22cdab4d2996bfe3e7fce494a9dbb4dd80e4beff33a1c5e89ce4639da
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+  - path: .engineering/evidence/negative-control.txt
+    sha256: 0a350753c93580e0503a25049cff8a8f4700a841a29db7932eed2ad7e12e3733
+  - path: .engineering/evidence/bounded-queue.txt
+    sha256: 23e8f59cef61c44ee083e16a6a1b489cfd0bd4589e9909d63a77a89bd8e8d075
+- stage: implementation
+  risk_id: PERF-002
+  discovered_by: architect
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已明确容量 4 与丢弃最旧策略；无消费持续生产 10000 条的对照失败、有界实现通过。只验证条目上限。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+  - path: negative-control/frame_queue.h
+    sha256: 265ba3c22cdab4d2996bfe3e7fce494a9dbb4dd80e4beff33a1c5e89ce4639da
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+  - path: .engineering/evidence/negative-control.txt
+    sha256: 0a350753c93580e0503a25049cff8a8f4700a841a29db7932eed2ad7e12e3733
+  - path: .engineering/evidence/bounded-queue.txt
+    sha256: 23e8f59cef61c44ee083e16a6a1b489cfd0bd4589e9909d63a77a89bd8e8d075
+- stage: test
+  risk_id: PERF-002
+  discovered_by: architect
+  executor: single Codex agent; retrospective review
+  components: []
+  status: failed
+  revision: qt-queue-20260910-r1
+  reason: Replay of known unbounded negative-control failure.
+  evidence:
+  - path: .engineering/evidence/negative-control.txt
+    sha256: 0a350753c93580e0503a25049cff8a8f4700a841a29db7932eed2ad7e12e3733
+- stage: review
+  risk_id: SEC-002
+  discovered_by: code-reviewer
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已阅读本示例交付源码、配置与文本输出，未发现凭证内容；不覆盖外部文件、既有临时 Git 文件或完整历史。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: README.md
+    sha256: 10943ca486a5b38868b11c76d925443dca99e4aff626e54427f17f33db17a6c3
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+  - path: negative-control/frame_queue.h
+    sha256: 265ba3c22cdab4d2996bfe3e7fce494a9dbb4dd80e4beff33a1c5e89ce4639da
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+  - path: CMakeLists.txt
+    sha256: cbc8f36236b9e771d8521278f9a5b10c0c49e041a2411dab71b37fbb53613705
+  - path: .engineering/evidence/build.txt
+    sha256: e89c9c9ad0291dfbdbdb73ee8d8de08f83e9af82e6cd12327e78bcd18b9b48cf
+  - path: .engineering/evidence/toolchain.txt
+    sha256: 16e7dc11bd29bc7fead2b2195492ea6e85f927fa8301d42fa325e3321932e093
+- stage: delivery
+  risk_id: SEC-002
+  discovered_by: code-reviewer
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: 已阅读本示例交付源码、配置与文本输出，未发现凭证内容；不覆盖外部文件、既有临时 Git 文件或完整历史。
+  evidence:
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: README.md
+    sha256: 10943ca486a5b38868b11c76d925443dca99e4aff626e54427f17f33db17a6c3
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+  - path: negative-control/frame_queue.h
+    sha256: 265ba3c22cdab4d2996bfe3e7fce494a9dbb4dd80e4beff33a1c5e89ce4639da
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+  - path: CMakeLists.txt
+    sha256: cbc8f36236b9e771d8521278f9a5b10c0c49e041a2411dab71b37fbb53613705
+  - path: .engineering/evidence/build.txt
+    sha256: e89c9c9ad0291dfbdbdb73ee8d8de08f83e9af82e6cd12327e78bcd18b9b48cf
+  - path: .engineering/evidence/toolchain.txt
+    sha256: 16e7dc11bd29bc7fead2b2195492ea6e85f927fa8301d42fa325e3321932e093
+- stage: delivery
+  risk_id: OPS-002
+  discovered_by: workflow-manager
+  executor: single Codex agent; retrospective review
+  components: []
+  status: passed
+  revision: qt-queue-20260910-r1
+  reason: README 记录实际环境、构建/测试/门禁命令及复现限制；本次交付源码和证据，无安装包或发布。
+  evidence:
+  - path: README.md
+    sha256: 10943ca486a5b38868b11c76d925443dca99e4aff626e54427f17f33db17a6c3
+  - path: engineering-notes.md
+    sha256: 578f50feda11502fc3cf60c374f556325d2429cafce81f309c1a113375ab7758
+  - path: .engineering/evidence/build.txt
+    sha256: e89c9c9ad0291dfbdbdb73ee8d8de08f83e9af82e6cd12327e78bcd18b9b48cf
+  - path: .engineering/evidence/ctest.txt
+    sha256: 7316b429624771057c82f8e1ce451b5497332bf45717322ff571f2026d5cd0d0
+issues:
+- id: ISSUE-QUEUE-001
+  risk_id: PERF-002
+  discovered_stage: test
+  discovered_by: test-engineer
+  executor: single Codex agent
+  components: []
+  kind: deliberately-injected-negative-control
+  location: negative-control/frame_queue.h:14
+  trigger: 10000 enqueue operations, zero consumption, requested capacity 4
+  impact: negative control retains 10000 items instead of at most 4; no latency or
+    memory measurement
+  owner: architect
+  severity: high
+  status: open
+  mitigation: Use bounded implementation in src/frame_queue.h with drop-oldest policy;
+    retain flawed input only for negative control.
+  revision: qt-queue-20260910-r1
+  reason: 'Replay: mitigation not yet accepted as verified.'
+  evidence:
+  - path: src/frame_queue.h
+    sha256: b94f23368b1d7b56c1c24df644e86e1ae37ab416e133bbc73180d82dd68f399a
+  - path: negative-control/frame_queue.h
+    sha256: 265ba3c22cdab4d2996bfe3e7fce494a9dbb4dd80e4beff33a1c5e89ce4639da
+  - path: tests/queue_tests.cpp
+    sha256: 2bfa3a0ca790536a547c499f633ccc2f0344a358fed47e698440cd74ff6d68b3
+  - path: .engineering/evidence/negative-control.txt
+    sha256: 0a350753c93580e0503a25049cff8a8f4700a841a29db7932eed2ad7e12e3733
+  - path: .engineering/evidence/bounded-queue.txt
+    sha256: 23e8f59cef61c44ee083e16a6a1b489cfd0bd4589e9909d63a77a89bd8e8d075
+  - path: .engineering/evidence/ctest.txt
+    sha256: 7316b429624771057c82f8e1ce451b5497332bf45717322ff571f2026d5cd0d0
+recording_mode: replay with the known defect still open; not a historical execution
+  snapshot

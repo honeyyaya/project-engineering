@@ -1,0 +1,148 @@
+schema_version: "0.1"
+kind: risk-catalog
+description: "可复用的风险发现规则；具体问题和证据保存在目标项目，不放在本目录。"
+features: [cpp, qt, queue, concurrency, latency, streaming, network, external-input, persistence, service, release]
+categories:
+  R01: requirements
+  R02: architecture
+  R03: code
+  R04: dependency
+  R05: testing
+  R06: performance
+  R07: security
+  R08: operations
+selection: "在所列阶段运行；any_features 为空表示通用，否则与项目特征任一相交时启用。"
+severity_rule: "这里只给出初始优先级，问题严重性由触发条件和影响决定；未发现证据不等于不存在风险。"
+risks:
+  - id: REQ-001
+    category: R01
+    name: missing-acceptance-criteria
+    owner: architect
+    stages: [requirement, design]
+    any_features: []
+    severity_hint: high
+    detection: [requirements-review]
+    evidence: "目标、非目标、异常行为与可验证验收条件之间的映射。"
+    mitigation: [clarify-scope, define-observable-acceptance]
+    components: [addy.constraint-driven-development, addy.interview-me]
+  - id: ARCH-001
+    category: R02
+    name: dependency-direction-or-cycle
+    owner: project-structure-manager
+    stages: [architecture, design, review]
+    any_features: []
+    severity_hint: high
+    detection: [build-target-review, dependency-graph, boundary-review]
+    evidence: "模块/构建依赖图、允许的方向和边界检查；新建阶段可提交目标设计并标注尚未实现。"
+    mitigation: [interface-extraction, dependency-inversion, split-responsibility]
+    components: [addy.api-and-interface-design]
+  - id: CODE-001
+    category: R03
+    name: ambiguous-resource-ownership
+    owner: engineering-standards
+    stages: [design, implementation, review]
+    any_features: [cpp, qt]
+    severity_hint: high
+    detection: [ownership-review, lifecycle-test]
+    evidence: "创建/销毁、QObject parent、取消和回调边界；按实际风险选择运行时检测。"
+    mitigation: [single-owner, value-semantics, lifecycle-regression]
+    components: [addy.code-review-and-quality]
+  - id: CODE-003
+    category: R03
+    name: concurrency-contract-gap
+    owner: engineering-standards
+    stages: [design, implementation, test, review]
+    any_features: [concurrency]
+    severity_hint: high
+    detection: [thread-boundary-review, race-test, supported-race-detector]
+    evidence: "线程契约、同步与压力测试；先核对工具链支持，再决定是否运行 TSAN。单次通过不能证明不存在竞态。"
+    mitigation: [thread-confinement, synchronization-review, cancellation-test]
+    components: [addy.code-review-and-quality, superpowers.systematic-debugging]
+  - id: DEP-001
+    category: R04
+    name: toolchain-or-dependency-mismatch
+    owner: codebase-explorer
+    stages: [requirement, architecture, implementation, delivery]
+    any_features: [cpp]
+    severity_hint: high
+    detection: [toolchain-discovery, dependency-inventory, configure-and-build]
+    evidence: "编译器、架构、Qt/CMake 版本、依赖来源与许可证；需求阶段记录事实，交付阶段提供实际构建结果。"
+    mitigation: [align-toolchain, pin-supported-dependency, isolate-adapter]
+    components: [addy.source-driven-development]
+  - id: TEST-001
+    category: R05
+    name: missing-behavior-protection
+    owner: test-engineer
+    stages: [plan, test, review]
+    any_features: []
+    severity_hint: high
+    detection: [acceptance-to-test-mapping, regression-test, negative-control]
+    evidence: "关键行为、边界和失败用例；计划阶段提交验证方式，测试阶段必须有执行结果。"
+    mitigation: [add-observable-test, exercise-error-path]
+    components: [superpowers.test-driven-development, superpowers.verification-before-completion]
+  - id: PERF-001
+    category: R06
+    name: missing-performance-budget
+    owner: architect
+    stages: [requirement, architecture, test]
+    any_features: [latency, streaming]
+    severity_hint: medium
+    detection: [budget-review, workload-benchmark]
+    evidence: "指标、单位、阈值、测量起止点、负载和环境；分位数按需求选择，不能把队列容量测试称为延迟测试。"
+    mitigation: [define-budget, measure-representative-load]
+    components: [addy.constraint-driven-development]
+  - id: PERF-002
+    category: R06
+    name: unbounded-queue
+    owner: architect
+    stages: [architecture, design, implementation, test]
+    any_features: [queue, streaming]
+    severity_hint: high
+    detection: [queue-design-review, producer-overload-test]
+    evidence: "队列容量、满载/丢弃策略与持续生产快于消费时的测试；只证明所测负载下的队列约束。"
+    mitigation: [bounded-buffer, backpressure, drop-policy]
+    components: [addy.api-and-interface-design, superpowers.verification-before-completion]
+  - id: SEC-001
+    category: R07
+    name: unchecked-external-boundary
+    owner: code-reviewer
+    stages: [design, implementation, review]
+    any_features: [network, external-input]
+    severity_hint: high
+    detection: [input-boundary-review, malformed-input-test]
+    evidence: "输入大小、信任边界、权限要求和失败用例；按产品需求判定认证/授权是否适用。"
+    mitigation: [validate-at-boundary, least-privilege, safe-default]
+    components: [addy.code-review-and-quality]
+  - id: SEC-002
+    category: R07
+    name: secret-in-deliverables
+    owner: code-reviewer
+    stages: [review, delivery]
+    any_features: []
+    severity_hint: high
+    detection: [changed-file-review, artifact-inventory]
+    evidence: "审查本次交付范围内的配置、日志、样本和版本控制文件；证据只保存位置与结论，不复制密钥值。"
+    mitigation: [remove-secret, exclude-local-state, rotate-if-exposed]
+    components: [addy.code-review-and-quality]
+  - id: OPS-001
+    category: R08
+    name: missing-recovery-path
+    owner: architect
+    stages: [design, test, delivery]
+    any_features: [persistence, service, release]
+    severity_hint: high
+    detection: [failure-recovery-review, restart-or-rollback-test]
+    evidence: "失败后的恢复路径、数据/配置兼容性、可观测信号和适用的回滚验证。"
+    mitigation: [define-recovery, version-config, test-rollback]
+    components: [addy.deprecation-and-migration]
+  - id: OPS-002
+    category: R08
+    name: unreproducible-delivery
+    owner: workflow-manager
+    stages: [delivery]
+    any_features: []
+    severity_hint: medium
+    detection: [delivery-inventory, reproduce-build-and-tests]
+    evidence: "构建/运行说明、实际命令、结果、限制和交付文件清单；不自动发布或推送。"
+    mitigation: [document-reproduction, record-known-gaps]
+    components: [superpowers.verification-before-completion, addy.documentation-and-adrs]

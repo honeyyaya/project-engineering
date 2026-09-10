@@ -1,0 +1,48 @@
+{
+  "stage": "delivery",
+  "status": "passed",
+  "gates": [
+    {
+      "stage": "requirement",
+      "status": "passed",
+      "reasons": []
+    },
+    {
+      "stage": "architecture",
+      "status": "passed",
+      "reasons": []
+    },
+    {
+      "stage": "design",
+      "status": "passed",
+      "reasons": []
+    },
+    {
+      "stage": "plan",
+      "status": "passed",
+      "reasons": []
+    },
+    {
+      "stage": "implementation",
+      "status": "passed",
+      "reasons": []
+    },
+    {
+      "stage": "test",
+      "status": "passed",
+      "reasons": []
+    },
+    {
+      "stage": "review",
+      "status": "passed",
+      "reasons": []
+    },
+    {
+      "stage": "delivery",
+      "status": "passed",
+      "reasons": []
+    }
+  ],
+  "issue_errors": [],
+  "scope": "Recorded evidence only; semantic review and tool execution remain with the agent/reviewer."
+}

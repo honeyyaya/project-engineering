@@ -1,0 +1,13 @@
+schema_version: "0.1"
+roles:
+  - {id: codebase-explorer, path: roles/codebase-explorer.md}
+  - {id: architect, path: roles/architect.md}
+  - {id: developer, path: roles/developer.md}
+  - {id: engineering-standards, path: roles/engineering-standards.md}
+  - {id: project-structure-manager, path: roles/project-structure-manager.md}
+  - {id: workflow-manager, path: roles/workflow-manager.md}
+  - {id: test-engineer, path: roles/test-engineer.md}
+  - {id: code-reviewer, path: roles/code-reviewer.md}
+  - {id: technical-debt-manager, path: roles/technical-debt-manager.md}
+  - {id: adr-manager, path: roles/adr-manager.md}
+  - {id: engineering-guardian, path: roles/engineering-guardian.md}

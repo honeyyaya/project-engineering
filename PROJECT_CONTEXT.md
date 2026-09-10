@@ -55,7 +55,7 @@ Registry v0.1 已收录四个第一轮来源：
 
 ## 角色与门禁模型
 
-Manager 由八个治理角色组成：Architect、Engineering Standards、Project Structure Manager、Workflow Manager、Test Engineer、Code Reviewer、Technical Debt Manager 和 ADR Manager。角色表示需要承担的责任，不要求一项任务创建八个 Agent。
+Manager 的原八个治理角色保持原有责任；新增 Codebase Explorer 建立项目事实、Developer 负责实现、Engineering Guardian 跨阶段发现遗漏并跟进风险证据。角色统一登记在 `registry/roles.yaml`，不要求每个角色创建一个 Agent。
 
 任务沿 `Requirement -> Architecture -> Design -> Plan -> Implementation -> Test -> Review -> Delivery` 推进。每个阶段通过对应 Gate，并留下决策、测试、审查、债务或交付记录；风险较低时可以合并阶段，但不能跳过与变更事实相关的验证。
 
@@ -73,3 +73,9 @@ Manager 由八个治理角色组成：Architect、Engineering Standards、Projec
 ```
 
 Project Engineering 的价值在于这条组合链是否能持续改善真实项目结果，而不是仓库里收集了多少 Skill。
+
+## Engineering Guard 最小闭环
+
+2026-09-10 起优先建立“项目事实 → 阶段风险 → 责任/组件 → 缓解 → 验证证据”的运行闭环。五类能力模型不变；Risk Catalog 是管理资产，Guardian 是 Role，阶段触发属于 Workflow。
+
+风险规则与真实问题分开：`registry/risks.yaml` 维护规则，目标项目 `.engineering/run.yaml` 记录状态和证据，`evaluations/` 保存脱敏评价。新建项目先 bootstrap，再沿原八阶段推进。脚本只检查记录完整性、散列和门禁，不代替代码分析或宣称发现所有问题；通过小型示例也不自动提高上游成熟度。

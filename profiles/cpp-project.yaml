@@ -1,5 +1,5 @@
 profile: cpp-project
-version: "0.1"
+version: "0.2"
 status: experimental
 description: "面向通用 C++ 仓库的基础工程能力组合。"
 extends: []
@@ -12,12 +12,13 @@ standards:
   - policies/dependency-rules.md
   - policies/layering.md
 skills:
-  always: [addy.context-engineering, addy.constraint-driven-development, addy.api-and-interface-design, addy.source-driven-development, addy.code-review-and-quality, addy.documentation-and-adrs]
+  candidates: [addy.context-engineering, addy.constraint-driven-development, addy.api-and-interface-design, addy.source-driven-development, addy.code-review-and-quality, addy.documentation-and-adrs]
   conditional: [addy.interview-me, addy.spec-driven-development, addy.incremental-implementation, addy.doubt-driven-development, addy.code-simplification, addy.deprecation-and-migration]
 superpowers:
-  required: [superpowers.brainstorming, superpowers.writing-plans, superpowers.executing-plans, superpowers.test-driven-development, superpowers.systematic-debugging, superpowers.verification-before-completion, superpowers.requesting-code-review, superpowers.receiving-code-review]
+  candidates: [superpowers.brainstorming, superpowers.writing-plans, superpowers.executing-plans, superpowers.test-driven-development, superpowers.systematic-debugging, superpowers.verification-before-completion, superpowers.requesting-code-review, superpowers.receiving-code-review]
   conditional: [superpowers.subagent-driven-development, superpowers.dispatching-parallel-agents, superpowers.using-git-worktrees, superpowers.finishing-a-development-branch]
 workflows:
+  new_project: workflow/new-project.md
   feature: stack/project-engineering.yaml#default_workflows.feature
   behavior_preserving_refactor: stack/project-engineering.yaml#default_workflows.behavior_preserving_refactor
   review: stack/project-engineering.yaml#default_workflows.code_review
@@ -30,4 +31,9 @@ quality_gates:
 outputs:
   required: [requirements-brief, implementation-plan, TEST_PLAN, REVIEW, verification-summary]
   conditional: [ADR, migration-plan, technical-debt-entry]
-  evidence_root: evaluations/
+  evidence_root: .engineering/
+guard:
+  base_features: [cpp]
+  risk_catalog: registry/risks.yaml
+  gate_catalog: registry/gates.yaml
+  component_policy: {s1_modes: [reference, evaluation], default_maturity: S4}

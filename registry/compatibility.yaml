@@ -15,7 +15,7 @@ layers:
 adoption_policy:
   primary_rule: "每个职责域只能有一个 primary 执行流程；重复来源只能 compose 或 reference。"
   maturity_rule: "adoption 描述采用关系，maturity 描述行为证据等级，两者不得互相替代。"
-  default_core_rule: "组件在 S2 Tested 之前不得成为无条件 Core。"
+  default_core_rule: "S1 只能显式 reference/evaluation；S2/S3 积累晋级证据，只有 S4 Core 可以 default。"
   harness_rule: "需要子 Agent、工作树或分支操作的组件必须先检查 Harness 能力。"
 matrix:
   - capability: requirement-discovery

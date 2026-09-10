@@ -1,0 +1,88 @@
+{
+  "stage": "delivery",
+  "status": "blocked",
+  "gates": [
+    {
+      "stage": "requirement",
+      "status": "blocked",
+      "reasons": [
+        "project-facts: missing or stale artifact",
+        "requirements: missing or stale artifact",
+        "REQ-001: unverified; owner=architect",
+        "DEP-001: unverified; owner=codebase-explorer"
+      ]
+    },
+    {
+      "stage": "architecture",
+      "status": "blocked",
+      "reasons": [
+        "architecture: missing or stale artifact",
+        "ARCH-001: unverified; owner=project-structure-manager",
+        "DEP-001: unverified; owner=codebase-explorer",
+        "PERF-002: unverified; owner=architect"
+      ]
+    },
+    {
+      "stage": "design",
+      "status": "blocked",
+      "reasons": [
+        "interfaces: missing or stale artifact",
+        "REQ-001: unverified; owner=architect",
+        "ARCH-001: unverified; owner=project-structure-manager",
+        "CODE-001: unverified; owner=engineering-standards",
+        "PERF-002: unverified; owner=architect"
+      ]
+    },
+    {
+      "stage": "plan",
+      "status": "blocked",
+      "reasons": [
+        "plan: missing or stale artifact",
+        "test-plan: missing or stale artifact",
+        "TEST-001: unverified; owner=test-engineer"
+      ]
+    },
+    {
+      "stage": "implementation",
+      "status": "blocked",
+      "reasons": [
+        "implementation: missing or stale artifact",
+        "CODE-001: unverified; owner=engineering-standards",
+        "DEP-001: unverified; owner=codebase-explorer",
+        "PERF-002: unverified; owner=architect"
+      ]
+    },
+    {
+      "stage": "test",
+      "status": "blocked",
+      "reasons": [
+        "test-results: missing or stale artifact",
+        "TEST-001: unverified; owner=test-engineer",
+        "PERF-002: unverified; owner=architect"
+      ]
+    },
+    {
+      "stage": "review",
+      "status": "blocked",
+      "reasons": [
+        "review: missing or stale artifact",
+        "ARCH-001: unverified; owner=project-structure-manager",
+        "CODE-001: unverified; owner=engineering-standards",
+        "TEST-001: unverified; owner=test-engineer",
+        "SEC-002: unverified; owner=code-reviewer"
+      ]
+    },
+    {
+      "stage": "delivery",
+      "status": "blocked",
+      "reasons": [
+        "delivery: missing or stale artifact",
+        "DEP-001: unverified; owner=codebase-explorer",
+        "SEC-002: unverified; owner=code-reviewer",
+        "OPS-002: unverified; owner=workflow-manager"
+      ]
+    }
+  ],
+  "issue_errors": [],
+  "scope": "Recorded evidence only; semantic review and tool execution remain with the agent/reviewer."
+}
