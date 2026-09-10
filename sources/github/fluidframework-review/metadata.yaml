@@ -1,0 +1,11 @@
+source_id: fluidframework-review
+repository: microsoft/FluidFramework
+url: https://github.com/microsoft/FluidFramework
+license: MIT
+audited_commit: d60dcd5e892982faa70bdca9d09b5a7b08f28891
+audited_on: "2026-09-09"
+snapshot_scope: ".claude/skills/review/** plus LICENSE, NOTICE.md, README.md, CONTRIBUTING.md"
+maturity: S1
+role: Real-world review benchmark
+original: ORIGINAL
+manifest: manifest.json

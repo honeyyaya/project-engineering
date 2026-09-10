@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	worktree = D:/Mirror/Projects/project-engineering
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/honeyyaya/project-engineering.git

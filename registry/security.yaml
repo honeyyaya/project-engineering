@@ -1,0 +1,17 @@
+domain: security
+components:
+  - id: local-security-threat-model
+    kind: local-enhancement
+    path: skills/security-threat-model/SKILL.md
+    maturity: S1
+  - id: addy-security-and-hardening
+    kind: upstream-candidate
+    source: addy-agent-skills
+    path: sources/github/addy-agent-skills/ORIGINAL/skills/security-and-hardening/SKILL.md
+    maturity: S1
+  - id: local-security-best-practices
+    kind: local-enhancement
+    path: skills/security-best-practices/SKILL.md
+    maturity: S1
+    limitation: "Current references cover Python, JavaScript/TypeScript and Go; no C++/Qt reference yet."
+default_composition: [local-security-threat-model, addy-security-and-hardening]

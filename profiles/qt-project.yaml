@@ -1,0 +1,40 @@
+profile: qt-project
+version: "0.1"
+status: experimental
+description: "面向 C++/Qt/QML 产品仓库的默认工程能力组合。"
+extends: [cpp-project]
+domains: [architecture, module-boundaries, cpp, qt, qml, testing, review, migration, documentation]
+standards:
+  - policies/cpp.md
+  - policies/qt.md
+  - policies/qml.md
+  - policies/naming.md
+  - policies/error-handling.md
+  - policies/complexity.md
+  - policies/dependency-rules.md
+  - policies/layering.md
+skills:
+  always: [addy.context-engineering, addy.constraint-driven-development, addy.api-and-interface-design, addy.source-driven-development, addy.code-simplification, addy.code-review-and-quality, addy.documentation-and-adrs]
+  conditional: [addy.interview-me, addy.idea-refine, addy.spec-driven-development, addy.incremental-implementation, addy.doubt-driven-development, addy.deprecation-and-migration]
+superpowers:
+  required: [superpowers.brainstorming, superpowers.writing-plans, superpowers.executing-plans, superpowers.test-driven-development, superpowers.systematic-debugging, superpowers.verification-before-completion, superpowers.requesting-code-review, superpowers.receiving-code-review]
+  conditional: [superpowers.subagent-driven-development, superpowers.dispatching-parallel-agents, superpowers.using-git-worktrees, superpowers.finishing-a-development-branch]
+workflows:
+  feature: stack/project-engineering.yaml#default_workflows.feature
+  behavior_preserving_refactor: stack/project-engineering.yaml#default_workflows.behavior_preserving_refactor
+  major_architecture_change: stack/project-engineering.yaml#default_workflows.major_architecture_change
+  review: stack/project-engineering.yaml#default_workflows.code_review
+quality_gates:
+  requirement: workflow/requirement.md
+  architecture: workflow/architecture-gate.md
+  implementation: workflow/implementation-gate.md
+  test: workflow/test-gate.md
+  review: workflow/review-gate.md
+outputs:
+  required: [requirements-brief, implementation-plan, TEST_PLAN, REVIEW, verification-summary]
+  conditional: [ADR, architecture-record, migration-plan, technical-debt-entry]
+  evidence_root: evaluations/
+activation:
+  project_facts: {language: [cpp], frameworks: [qt, qml]}
+  required_inputs: [build-entry, test-entry, module-map, compatibility-targets]
+  default_risk: medium

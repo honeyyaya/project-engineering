@@ -1,0 +1,18 @@
+domain: refactoring
+components:
+  - id: local-refactoring-routing
+    kind: local
+    path: SKILL.md
+    maturity: S1
+    role: behavior-preserving refactoring routing
+  - id: addy.code-simplification
+    kind: upstream-candidate
+    source: addy-agent-skills
+    path: sources/github/addy-agent-skills/ORIGINAL/skills/code-simplification/SKILL.md
+    maturity: S1
+  - id: superpowers.verification-before-completion
+    kind: upstream-candidate
+    source: superpowers
+    path: sources/github/superpowers/ORIGINAL/skills/verification-before-completion/SKILL.md
+    maturity: S1
+default_composition: [local-refactoring-routing, addy.code-simplification, superpowers.verification-before-completion]

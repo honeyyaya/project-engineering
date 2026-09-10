@@ -1,4 +1,4 @@
 interface:
-  display_name: "Project Engineering"
-  short_description: "C++/Qt/QML architecture, implementation, review, and refactoring"
-  default_prompt: "按项目工程规则分析需求，选择合适模式，并给出可验证的设计、实现或审查结果。"
+  display_name: "Engineering Governance Manager"
+  short_description: "Governed C++/Qt/QML project engineering and refactoring"
+  default_prompt: "读取项目事实，判断任务阶段与风险，选择适用角色和能力，经过质量门后输出可验证、可追溯的工程结果。"

@@ -1,0 +1,34 @@
+domain: architecture
+components:
+  - id: local-architecture-analysis
+    kind: local
+    path: governance/architecture/architecture-review.md
+    maturity: S1
+    role: evidence-based current-state analysis
+  - id: local-module-boundary
+    kind: local
+    path: governance/architecture/module-boundary.md
+    maturity: S1
+    role: module responsibility and dependency direction
+  - id: byliu-architecture-review
+    kind: upstream-reference
+    source: byliu-architecture-review
+    path: sources/github/byliu-architecture-review/ORIGINAL/SKILL.md
+    maturity: S1
+    role: greenfield and pivot challenge
+  - id: addy.api-and-interface-design
+    kind: upstream-candidate
+    source: addy-agent-skills
+    path: sources/github/addy-agent-skills/ORIGINAL/skills/api-and-interface-design/SKILL.md
+    maturity: S1
+    role: interface contract quality
+  - id: addy.documentation-and-adrs
+    kind: upstream-candidate
+    source: addy-agent-skills
+    path: sources/github/addy-agent-skills/ORIGINAL/skills/documentation-and-adrs/SKILL.md
+    maturity: S1
+    role: decision records and engineering documentation
+default_composition:
+  - local-architecture-analysis
+  - local-module-boundary
+  - addy.api-and-interface-design

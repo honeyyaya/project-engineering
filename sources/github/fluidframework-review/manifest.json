@@ -1,0 +1,48 @@
+{
+  "source_id": "fluidframework-review",
+  "commit": "d60dcd5e892982faa70bdca9d09b5a7b08f28891",
+  "files": [
+    {
+      "path": ".claude/skills/review/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "f72a837ad9b9f7661f898f670d2bc06a20894ea5",
+      "sha256": "412a82e55e4f1fcd8ebeb91cbe260fa306d501c61c066a5e329a74ee27e7de7c",
+      "bytes": 15099
+    },
+    {
+      "path": ".claude/skills/review/api-conventions.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "b9d4c71257c51536fa789c0e56a0f61bcc2a45fa",
+      "sha256": "623f3ba53ecfab2db90da381818d3f89f69159347306fcc9f2e62146ff2e9054",
+      "bytes": 5068
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "6e85544f734bd629a6e4aea573cb6fc5f323266c",
+      "sha256": "e6faa2d318a317616aa2b9880fe86de583ed511611326ff9698061ccd27f1923",
+      "bytes": 1072
+    },
+    {
+      "path": "LICENSE",
+      "git_mode": "100644",
+      "git_blob_sha1": "60af0a6a40e9cd061300365e95db355f31c8c772",
+      "sha256": "af3740985993b0824d6635b01775a7dceca76ed3cb12c4336183ed506904e8d5",
+      "bytes": 1112
+    },
+    {
+      "path": "NOTICE.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "60c739a21d01c02fef851e87407c43b3c12e05ce",
+      "sha256": "93076164de413516918267f21e2eb193ad134d64118259fddd23606244e996a5",
+      "bytes": 1341
+    },
+    {
+      "path": "README.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "d69a4d29687372abb85834717336405d51eddc23",
+      "sha256": "06e983fab0d93f05bc72888936faa17a72c53bbbeaed3052c4c1fddb874aac1c",
+      "bytes": 20122
+    }
+  ]
+}

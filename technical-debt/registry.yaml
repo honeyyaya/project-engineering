@@ -1,0 +1,6 @@
+schema_version: "0.1"
+description: "只登记影响当前决策、验证或维护成本的技术债，不收集无行动价值的 TODO。"
+fields: [id, type, location, evidence, impact, severity, trigger, planned_phase, verification]
+status_values: [open, accepted, scheduled, resolved, rejected]
+severity_values: [blocker, high, medium, low]
+items: []

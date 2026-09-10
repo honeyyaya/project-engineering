@@ -1,0 +1,66 @@
+schema_version: "0.1"
+kind: source-compatibility
+description: "定义 Superpowers 流程底座与 Addy 工程能力层的边界、重叠和采用策略。"
+layers:
+  superpowers:
+    role: workflow-foundation
+    responsibility: "怎么开发：需求澄清、计划、执行、TDD、调试、验证、审查、隔离和分支生命周期。"
+    source: sources/github/superpowers
+    default_adoption: adopt
+  addy:
+    role: engineering-quality-layer
+    responsibility: "按照什么工程标准开发：上下文、约束、接口、质量、简化、迁移和文档。"
+    source: sources/github/addy-agent-skills
+    default_adoption: compose
+adoption_policy:
+  primary_rule: "每个职责域只能有一个 primary 执行流程；重复来源只能 compose 或 reference。"
+  maturity_rule: "adoption 描述采用关系，maturity 描述行为证据等级，两者不得互相替代。"
+  default_core_rule: "组件在 S2 Tested 之前不得成为无条件 Core。"
+  harness_rule: "需要子 Agent、工作树或分支操作的组件必须先检查 Harness 能力。"
+matrix:
+  - capability: requirement-discovery
+    superpowers: {mode: adopt, components: [superpowers.brainstorming]}
+    addy: {mode: compose, components: [addy.interview-me, addy.idea-refine]}
+    resolution: "Superpowers 提供发现流程，Addy 提供追问和范围细化。"
+  - capability: planning
+    superpowers: {mode: adopt, components: [superpowers.writing-plans, superpowers.executing-plans]}
+    addy: {mode: compose, components: [addy.spec-driven-development, addy.incremental-implementation]}
+    resolution: "计划和执行保留 Superpowers primary，Addy 补充规格和增量约束。"
+  - capability: testing
+    superpowers: {mode: adopt, components: [superpowers.test-driven-development, superpowers.verification-before-completion]}
+    addy: {mode: reference, components: [addy.test-driven-development]}
+    resolution: "TDD 与完成验证由 Superpowers 统一负责。"
+  - capability: debugging
+    superpowers: {mode: adopt, components: [superpowers.systematic-debugging]}
+    addy: {mode: reference, components: [addy.debugging-and-error-recovery]}
+    resolution: "保留一个调试主流程，Addy 仅用于方法比较和评估。"
+  - capability: review
+    superpowers: {mode: adopt, components: [superpowers.requesting-code-review, superpowers.receiving-code-review]}
+    addy: {mode: compose, components: [addy.code-review-and-quality]}
+    resolution: "Superpowers 编排审查交互，Addy 提供质量检查维度，FluidFramework 作为基准。"
+  - capability: context-and-evidence
+    superpowers: {mode: reference, components: []}
+    addy: {mode: adopt, components: [addy.context-engineering, addy.source-driven-development]}
+    resolution: "上下文选择和来源证据由工程层负责。"
+  - capability: constraints-and-interfaces
+    superpowers: {mode: reference, components: []}
+    addy: {mode: adopt, components: [addy.constraint-driven-development, addy.api-and-interface-design]}
+    resolution: "本地 Standard 决定最终约束，Addy 提供动作和检查方法。"
+  - capability: refactoring-and-migration
+    superpowers: {mode: compose, components: [superpowers.test-driven-development, superpowers.verification-before-completion]}
+    addy: {mode: adopt, components: [addy.code-simplification, addy.deprecation-and-migration]}
+    resolution: "Addy 定义重构和迁移策略，Superpowers 提供行为证据和完成验证。"
+  - capability: git-and-isolation
+    superpowers: {mode: conditional, components: [superpowers.using-git-worktrees, superpowers.finishing-a-development-branch]}
+    addy: {mode: reject, components: []}
+    resolution: "由 Harness 能力决定是否启用 Git 组件。"
+conflicts:
+  - id: duplicate-tdd
+    primary: superpowers.test-driven-development
+    references: [addy.test-driven-development]
+  - id: duplicate-debugging
+    primary: superpowers.systematic-debugging
+    references: [addy.debugging-and-error-recovery]
+  - id: duplicate-planning
+    primary: superpowers.writing-plans
+    composition: [addy.spec-driven-development, addy.incremental-implementation]

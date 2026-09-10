@@ -1,0 +1,15 @@
+schema_version: "0.1"
+integration: superpowers
+components:
+  - {id: superpowers.brainstorming, upstream: skills/brainstorming, local_role: requirement-discovery, local_hooks: [workflow/requirement.md, addy.interview-me, addy.idea-refine]}
+  - {id: superpowers.writing-plans, upstream: skills/writing-plans, local_role: implementation-planning, local_hooks: [workflow/implementation-gate.md, templates/TEST_PLAN.md]}
+  - {id: superpowers.executing-plans, upstream: skills/executing-plans, local_role: plan-execution, local_hooks: [workflow/implementation-gate.md, addy.incremental-implementation]}
+  - {id: superpowers.test-driven-development, upstream: skills/test-driven-development, local_role: test-loop, local_hooks: [workflow/test-gate.md, policies/cpp.md, policies/qt.md, policies/qml.md]}
+  - {id: superpowers.systematic-debugging, upstream: skills/systematic-debugging, local_role: root-cause-analysis, local_hooks: [workflow/test-gate.md, addy.doubt-driven-development]}
+  - {id: superpowers.verification-before-completion, upstream: skills/verification-before-completion, local_role: completion-evidence, local_hooks: [workflow/review-gate.md, templates/REVIEW.md]}
+  - {id: superpowers.requesting-code-review, upstream: skills/requesting-code-review, local_role: review-dispatch, local_hooks: [governance/review, addy.code-review-and-quality]}
+  - {id: superpowers.receiving-code-review, upstream: skills/receiving-code-review, local_role: review-resolution, local_hooks: [workflow/review-gate.md, technical-debt/registry.yaml]}
+  - {id: superpowers.subagent-driven-development, upstream: skills/subagent-driven-development, local_role: delegated-execution, local_hooks: [workflow/routing.md], condition: harness_supports_subagents}
+  - {id: superpowers.dispatching-parallel-agents, upstream: skills/dispatching-parallel-agents, local_role: parallel-delegation, local_hooks: [workflow/routing.md], condition: independent_work_units}
+  - {id: superpowers.using-git-worktrees, upstream: skills/using-git-worktrees, local_role: workspace-isolation, local_hooks: [workflow/routing.md], condition: harness_lacks_native_isolation}
+  - {id: superpowers.finishing-a-development-branch, upstream: skills/finishing-a-development-branch, local_role: branch-delivery, local_hooks: [workflow/review-gate.md], condition: harness_authorizes_git_delivery}

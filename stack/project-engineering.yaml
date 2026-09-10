@@ -1,0 +1,74 @@
+stack: project-engineering
+version: "0.2"
+status: experimental
+last_updated: "2026-09-09"
+
+manager:
+  name: engineering-governance-manager
+  responsibility: "根据项目上下文、任务阶段、风险和门禁选择并编排能力"
+  roles: [architect, engineering-standards, project-structure-manager, workflow-manager, test-engineer, code-reviewer, technical-debt-manager, adr-manager]
+foundation:
+  integration: integrations/superpowers/manifest.yaml
+  compatibility: integrations/superpowers/compatibility.yaml
+  required_components: [superpowers.brainstorming, superpowers.writing-plans, superpowers.executing-plans, superpowers.test-driven-development, superpowers.systematic-debugging, superpowers.verification-before-completion, superpowers.requesting-code-review, superpowers.receiving-code-review]
+profiles:
+  cpp: profiles/cpp-project.yaml
+  qt: profiles/qt-project.yaml
+
+role_components:
+  architect:
+    local: [governance/architecture, governance/design]
+    references: [byliu-architecture-review, addy.api-and-interface-design]
+  engineering-standards:
+    local: [policies/cpp.md, policies/qt.md, policies/qml.md, policies/naming.md, policies/error-handling.md, policies/complexity.md]
+    references: [addy.code-simplification]
+  project-structure-manager:
+    local: [governance/architecture/module-boundary.md, policies/dependency-rules.md, policies/layering.md]
+  workflow-manager:
+    local: [workflow/routing.md, workflow/conflict-resolution.md]
+    references: [integrations/superpowers/manifest.yaml]
+  test-engineer:
+    local: [workflow/test-gate.md, templates/TEST_PLAN.md]
+    references: [superpowers.test-driven-development, superpowers.verification-before-completion]
+  code-reviewer:
+    local: [governance/review, templates/REVIEW.md]
+    references: [addy.code-review-and-quality, fluidframework-review]
+  technical-debt-manager:
+    local: [roles/technical-debt-manager.md, technical-debt/registry.yaml]
+  adr-manager:
+    local: [governance/architecture/architecture-decision.md, templates/ADR.md]
+    references: [addy.documentation-and-adrs]
+
+default_workflows:
+  feature:
+    stages: [requirement, architecture, design, plan, implementation, test, review, delivery]
+    roles: [workflow-manager, architect, engineering-standards, project-structure-manager, test-engineer, code-reviewer, adr-manager]
+  major_architecture_change:
+    stages: [requirement, architecture, design, plan, implementation, test, review, delivery]
+    roles: [workflow-manager, architect, project-structure-manager, engineering-standards, test-engineer, code-reviewer, technical-debt-manager, adr-manager]
+    references: [byliu-architecture-review, fluidframework-review]
+  code_review:
+    stages: [review, delivery]
+    roles: [workflow-manager, code-reviewer, engineering-standards, technical-debt-manager, adr-manager]
+  behavior_preserving_refactor:
+    stages: [requirement, architecture, plan, implementation, test, review, delivery]
+    roles: [workflow-manager, architect, project-structure-manager, engineering-standards, test-engineer, code-reviewer, technical-debt-manager, adr-manager]
+    references: [superpowers.test-driven-development, superpowers.verification-before-completion, addy.code-simplification]
+
+gates:
+  - id: requirement
+    path: workflow/requirement.md
+  - id: architecture
+    path: workflow/architecture-gate.md
+  - id: implementation
+    path: workflow/implementation-gate.md
+  - id: test
+    path: workflow/test-gate.md
+  - id: review
+    path: workflow/review-gate.md
+
+promotion:
+  rule: "No upstream component is Core before S2 evaluation."
+  target: S2
+  candidates: [superpowers, addy-agent-skills, fluidframework-review, byliu-architecture-review]
+  required_cases: [evaluations/architecture/greenfield-module-change.md, evaluations/cpp/qt-review.md, evaluations/refactoring/behavior-preservation.md]

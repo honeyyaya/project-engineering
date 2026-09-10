@@ -1,0 +1,66 @@
+schema_version: "0.1"
+scale: "0 absent, 1 incidental, 3 useful, 5 primary strength"
+capabilities:
+  workflow-orchestration:
+    superpowers: 5
+    addy-agent-skills: 3
+    fluidframework-review: 2
+    byliu-architecture-review: 2
+  planning-and-decomposition:
+    superpowers: 5
+    addy-agent-skills: 5
+    fluidframework-review: 2
+    byliu-architecture-review: 2
+  TDD-and-testing-discipline:
+    superpowers: 5
+    addy-agent-skills: 4
+    fluidframework-review: 3
+    byliu-architecture-review: 1
+  systematic-debugging:
+    superpowers: 5
+    addy-agent-skills: 4
+    fluidframework-review: 2
+    byliu-architecture-review: 1
+  code-review:
+    superpowers: 4
+    addy-agent-skills: 5
+    fluidframework-review: 5
+    byliu-architecture-review: 1
+  API-and-interface-quality:
+    superpowers: 2
+    addy-agent-skills: 5
+    fluidframework-review: 5
+    byliu-architecture-review: 1
+  architecture-challenge:
+    superpowers: 2
+    addy-agent-skills: 3
+    fluidframework-review: 3
+    byliu-architecture-review: 5
+  C++-Qt-QML-specificity:
+    superpowers: 1
+    addy-agent-skills: 1
+    fluidframework-review: 1
+    byliu-architecture-review: 0
+  security-and-performance:
+    superpowers: 2
+    addy-agent-skills: 5
+    fluidframework-review: 4
+    byliu-architecture-review: 1
+  skill-evaluation:
+    superpowers: 3
+    addy-agent-skills: 5
+    fluidframework-review: 1
+    byliu-architecture-review: 1
+
+selection_rules:
+  - "Use superpowers for workflow, TDD, debugging, planning and completion verification."
+  - "Use addy-agent-skills for quality gates; prefer its code-review-and-quality for the five-axis review."
+  - "Use FluidFramework review as a benchmark for high-confidence findings and API review structure."
+  - "Use byliu architecture review before major platform, sync, bridge, sidecar or adapter decisions."
+  - "Local C++/Qt/QML rules remain the domain adapter until an upstream source passes domain-specific evaluations."
+
+overlap_policy:
+  planning: "superpowers is the workflow source; Addy is a quality and decomposition reference. Do not run both planning flows automatically."
+  testing: "superpowers owns RED-GREEN-REFACTOR; Addy supplies test strategy and quality checks."
+  review: "Addy supplies the default quality gate; FluidFramework supplies benchmark questions and high-confidence thresholds."
+  architecture: "byliu supplies greenfield/pivot challenge; local architecture rules supply C++/Qt evidence and output format."

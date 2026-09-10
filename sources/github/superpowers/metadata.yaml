@@ -1,0 +1,11 @@
+source_id: superpowers
+repository: obra/superpowers
+url: https://github.com/obra/superpowers
+license: MIT
+audited_commit: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
+audited_on: "2026-09-09"
+snapshot_scope: full repository tree at audited commit
+maturity: S1
+role: Workflow / orchestration source
+original: ORIGINAL
+manifest: manifest.json

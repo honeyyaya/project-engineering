@@ -1,0 +1,25 @@
+integration: superpowers
+version: "0.1"
+status: pinned
+role: workflow-foundation
+source:
+  repository: obra/superpowers
+  url: https://github.com/obra/superpowers
+  license: MIT
+  commit: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
+  snapshot: sources/github/superpowers/ORIGINAL
+  manifest: sources/github/superpowers/manifest.json
+supported_harnesses:
+  - {id: codex, status: supported, notes: "优先使用 Harness 原生工作区、Agent 和 Git 能力。"}
+  - {id: claude, status: supported}
+  - {id: cursor, status: supported}
+  - {id: gemini, status: supported}
+  - {id: opencode, status: supported}
+  - {id: copilot, status: conditional}
+activation:
+  prerequisite: "Harness 能解析 Superpowers skill，并允许注入本地 Standards、Profiles 和 Gates。"
+  order: "先加载 Profile 与本地约束，再调用 Superpowers 流程组件。"
+  fallback: "Harness 已提供等价能力时，使用 Harness 原生实现并保留结果契约。"
+artifacts:
+  component_map: integrations/superpowers/component-map.yaml
+  compatibility: integrations/superpowers/compatibility.yaml

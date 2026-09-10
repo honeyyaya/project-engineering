@@ -1,0 +1,1371 @@
+{
+  "source_id": "superpowers",
+  "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+  "files": [
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "4e3b4350d5585e4240bb48ac3378f828985f2c8c",
+      "sha256": "2b94116c190896480e5054222a744e375976f8ae5bdb66ff0ab6b348dfad4182",
+      "bytes": 363
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "f85d3464bba23ce5100d3510f066fe0b5b62f9c4",
+      "sha256": "3fa5524915c3396b094a264d3eefff9580768b3d704428347ea32864b3d41a54",
+      "bytes": 514
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "7e0c66154823e7258db20820e99fc0dd82e0479f",
+      "sha256": "d0d56f9f3a6adbf341d5d49850f63def17bfb7e9a39704b517745b2c554498c3",
+      "bytes": 497
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "123793e54ffbd933e9a3e6f99e133e8087a08828",
+      "sha256": "d7ac84a700062e865715f75626945a2a3324778c68dba1a543c7ed41e48def10",
+      "bytes": 1730
+    },
+    {
+      "path": ".cursor-plugin/plugin.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "bb2bdbcd1ab620883d1a4865ae03f021064ff13c",
+      "sha256": "6bdbd1aba18726b9445196eb341313347870955cb15cdabf3e4b5cb1788af3cb",
+      "bytes": 578
+    },
+    {
+      "path": ".devin-plugin/plugin.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "8b68f28e4d66152c78e835294504d4666dd93b14",
+      "sha256": "eeee1aca30e6ec6ef5bc291af6d3d243bc3970707260b9d7d8b6ded13f76f49b",
+      "bytes": 575
+    },
+    {
+      "path": ".gitattributes",
+      "git_mode": "100644",
+      "git_blob_sha1": "def8027c9d57f718d0817f54158d4073b4a8e300",
+      "sha256": "4702b23e09afad9638c184c8900b31af635673ba439c265ecc3d341efb54eaf8",
+      "bytes": 373
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "git_mode": "100644",
+      "git_blob_sha1": "f646aa73b91cebf36d31405d63858e0a3777e28d",
+      "sha256": "2f9cdda7b1f3ea4be28bbcc3444c2c6512d7739589e6c5e72fd4f95950d3e7d4",
+      "bytes": 62
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "01bb80e2ebfd36200b9327d78a947efade3c28fa",
+      "sha256": "32a5b6e5ad3528daac479ad0025502dfad9dd06fe457242c1506ac19c77d6e46",
+      "bytes": 1593
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "git_mode": "100644",
+      "git_blob_sha1": "008309e5e1e19cdaa048e95523d939511027b9d6",
+      "sha256": "e955d428a9ac46ed35f407b6532d74d1dade217d89d9a4c7f6b05b72872a004a",
+      "bytes": 241
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "c7a4de12065d741c12e169a3c10604d2596ff146",
+      "sha256": "59ad1c8a7b5faca0273fa310f6c78fe2a3ec4917d9f3e12fb1220d5381c8f783",
+      "bytes": 1604
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/platform_support.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "277dd1ee99e5b86db953aec35d1a6cdcfbd2e691",
+      "sha256": "1231296fef8bd072baa8d2f41bde4b758ffc22ac88ae435ed22d1a5084574a0b",
+      "bytes": 979
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "2ec951316ff237ebd2829283bdbc74ff265de1e1",
+      "sha256": "b5cde91d5809bec88f6d11f6e295695549a59ea9fc5e32469ea12ad485cb37fb",
+      "bytes": 5814
+    },
+    {
+      "path": ".gitignore",
+      "git_mode": "100644",
+      "git_blob_sha1": "efa95832b9a3e91fe87b2ce3b2d568cfba4cbeaa",
+      "sha256": "30b79670d7359590a4f1798e99112d9298d8eed889042aba2ee9a1722dc06ebb",
+      "bytes": 347
+    },
+    {
+      "path": ".hermes-plugin/__init__.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "3b41644bb2890fbd3b642b63ed6625da0077e935",
+      "sha256": "7fd93899e39371d56ba1e32660548673afa78f3a4a8bd306f93fbb418afa6f3c",
+      "bytes": 3937
+    },
+    {
+      "path": ".hermes-plugin/plugin.yaml",
+      "git_mode": "100644",
+      "git_blob_sha1": "3a0ecfb21e6061c1560b8477f1e2f2b4e6cd1f58",
+      "sha256": "c3298523f250a6a600c6688a0601b5b13bacb21eebde286681115d82de462899",
+      "bytes": 151
+    },
+    {
+      "path": ".kimi-plugin/plugin.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "dcb9a7a9bee9ee8acfc73d535060569de0cdc8e6",
+      "sha256": "847469c0c2b1f0cec8dedcce53f9ef14092d0138012d670d65a49e0de30d5031",
+      "bytes": 3090
+    },
+    {
+      "path": ".opencode/INSTALL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "080f043f8f63e4e5bb44e29bcde84cd9593871a7",
+      "sha256": "c6cd33dc6962d391ccc13d1820769df84b4ef2e00dc61f89aabb08cd4620a138",
+      "bytes": 3342
+    },
+    {
+      "path": ".opencode/plugins/superpowers.js",
+      "git_mode": "100644",
+      "git_blob_sha1": "423e5ed513261485c657ba166b0372a5293639c7",
+      "sha256": "a5c5e1dbb0abfbd6ec3322b724b9a7b3318bbbb3d83f9a661c56ae0ed0a3adb8",
+      "bytes": 5464
+    },
+    {
+      "path": ".pi/extensions/superpowers.ts",
+      "git_mode": "100644",
+      "git_blob_sha1": "a978e80ee0bbffe649ace8826bf6e8b69beea421",
+      "sha256": "39c27000c047f8a1399a76e032e4cd239d7bdb0be168a121f46a2ac719deaae0",
+      "bytes": 4283
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "git_mode": "100644",
+      "git_blob_sha1": "08fd36d126acd2d5b9ad2dc29c0f83cbb7ebe428",
+      "sha256": "73070dfddbcb1e94980a2e7172532e5d6403e44aa3f30ef5de30306b77684f32",
+      "bytes": 579
+    },
+    {
+      "path": ".version-bump.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "8df0a9775cc57470a3596805a402c852bbc56e77",
+      "sha256": "a9e976e2619ea760f14f1ed254e6499632af44a000c24a364be8f910a9539d73",
+      "bytes": 791
+    },
+    {
+      "path": "AGENTS.md",
+      "git_mode": "120000",
+      "git_blob_sha1": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "sha256": "6ebdb617a8104a7756d0cf36578ab01103dc9f07e4dc6feb751296b9c402faf7",
+      "bytes": 9
+    },
+    {
+      "path": "CLAUDE.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "5f3d7410f82cb3d348a80cbd59c359da9f75e6d8",
+      "sha256": "4607f59c377df203611d6312074b68e63b16304a342e289ae6733e5671326e2b",
+      "bytes": 8873
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "f6422545a4b5485c81346080d8d34c53b5cf9292",
+      "sha256": "3b3c37d182a611feb4e3f1105a7d3b998775f6a3bac714b90e01d1fdfe332739",
+      "bytes": 5224
+    },
+    {
+      "path": "GEMINI.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "0dd2f585ecb2ee37c558c8233d72489bb2135856",
+      "sha256": "0823da8b7277f8b623746d57c0bee75fda02e4c832fe57843e644d0fe633abbc",
+      "bytes": 92
+    },
+    {
+      "path": "LICENSE",
+      "git_mode": "100644",
+      "git_blob_sha1": "abf0390320aa14406af7a520b9b0739fdda9bf08",
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+      "bytes": 1070
+    },
+    {
+      "path": "README.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "09a91c6d03cfa3d874c5c33b6f8cc3d0b2d89645",
+      "sha256": "4cd0e751210f24a5e4788730e7b5bb145b4d03a2b2c71202721454481a5c5e81",
+      "bytes": 12137
+    },
+    {
+      "path": "RELEASE-NOTES.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "8b01918c98a0c3321d3acfd7a2940a92a76bb33e",
+      "sha256": "7c69947152d72dde3b24e2f251afdc82b1d5f8e3a4c9dde21f65e3229f281d11",
+      "bytes": 94003
+    },
+    {
+      "path": "assets/app-icon.png",
+      "git_mode": "100644",
+      "git_blob_sha1": "25518da4625e850d97b15a9e0a27e7115969dc0d",
+      "sha256": "b7477eb39b5109617fe37e51dd65d8bdd8dff6c40fda49adfbc21eec445777ee",
+      "bytes": 48231
+    },
+    {
+      "path": "assets/superpowers-small.svg",
+      "git_mode": "100644",
+      "git_blob_sha1": "c514fe33a692cfaf4f6321e9e6c520df6a8d2769",
+      "sha256": "54a632d9ee6197ccbc10d43d42217e23d08375bea63ba8eb4b6af757c1535038",
+      "bytes": 1733
+    },
+    {
+      "path": "docs/README.kimi.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "0d7cd74d0b5d65c60ae44d51dcf11691ae1041f6",
+      "sha256": "915b112731bbcb635885ed1c5f24a36b43248bc18689fa253bb4f89c937c6585",
+      "bytes": 2691
+    },
+    {
+      "path": "docs/README.opencode.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "11da85425a102a03b7bb598376c5d9e59e6f3276",
+      "sha256": "299d3016ea3bd2ff436e70d27b7493f9c119febffed49bb0d82032bc246c28b1",
+      "bytes": 4580
+    },
+    {
+      "path": "docs/plans/2025-11-22-opencode-support-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "144f1cea2956f0736a9af65ae4aa6b0566146ed6",
+      "sha256": "4688cb2e4bafa7e6124dd811be57c8873bfb4b8cccb95ddbd7032557a9cfd10b",
+      "bytes": 8831
+    },
+    {
+      "path": "docs/plans/2025-11-22-opencode-support-implementation.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "bd148b4cb3a4a22ca20d0ebe9d1de875afbf534f",
+      "sha256": "2cc68cc29ee1174e13a65739b004f2346911a0d89a20744930f9f5b81963b4f3",
+      "bytes": 27539
+    },
+    {
+      "path": "docs/plans/2025-11-28-skills-improvements-from-user-feedback.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "52a8b0ea9f938172d703136dd9665c7c14e31c64",
+      "sha256": "cce0b2e951209ac7d555fcbacfc858d8069b4036019d44dd95bb4334afaf2e65",
+      "bytes": 21033
+    },
+    {
+      "path": "docs/plans/2026-01-17-visual-brainstorming.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "40aa0ad0620d9647a377391247665c611a8a8cb4",
+      "sha256": "2ff9c06d8c7cf650becb588d74507c5681c55844c61e21160a290cbe26d41ca4",
+      "bytes": 15107
+    },
+    {
+      "path": "docs/porting-to-a-new-harness.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "4ae9603defaf0d9ff052189a33fe515dd2a4ee2e",
+      "sha256": "b60895cd45379329d6cc97a37a0aaf237e51773bd51c1f7f5fe38e141e53af6c",
+      "bytes": 50682
+    },
+    {
+      "path": "docs/superpowers/plans/2026-01-22-document-review-system.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "6ab9fb8a4c2bd8ed79563503c7ab78e6a79099db",
+      "sha256": "92875a4d7db7acef7737ace512ed5a6ae29ab76aff421633276a4a824c5d5cf7",
+      "bytes": 8999
+    },
+    {
+      "path": "docs/superpowers/plans/2026-02-19-visual-brainstorming-refactor.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "224d34986a48ccf908dc8429ec6a7a57c88d36a2",
+      "sha256": "fbc67c4e7c5e42ff6e8e647951b749a2610ca2e13639903867258032c175bbbe",
+      "bytes": 18804
+    },
+    {
+      "path": "docs/superpowers/plans/2026-03-11-zero-dep-brainstorm-server.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "9bfc666e90d57a730fb3cab9f0c118208eb2835f",
+      "sha256": "d1e3b19e1111cab0a113519a9d2d9e881080c5fe13c3227e6c22fa88d08dc11d",
+      "bytes": 15576
+    },
+    {
+      "path": "docs/superpowers/plans/2026-03-23-codex-app-compatibility.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "0f35d3d283fc4ba03eb61c26fce5b4990e08f790",
+      "sha256": "28b0335e97ceea066ab2eefa9a02eea6bf30d3e580788ce462976efce13dc709",
+      "bytes": 19177
+    },
+    {
+      "path": "docs/superpowers/plans/2026-04-06-worktree-rototill.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "183ee744d96e27dab1715f40c51d699c0585157e",
+      "sha256": "98d21b8bbbee1d7359aaf65ba74a9f1313d9f5114000613301a00244a415f61f",
+      "bytes": 29210
+    },
+    {
+      "path": "docs/superpowers/plans/2026-05-06-lift-drill-into-evals.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "b1c01ca26e624d81de9cf79b481aa70d0238fa7e",
+      "sha256": "3b1b5c8748dde0754872181631ef8b6188d0221b2723106ab2a82d2b9290accd",
+      "bytes": 48218
+    },
+    {
+      "path": "docs/superpowers/plans/2026-05-07-pi-extension-and-evals.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "6272acd6491fef345ae28b623e3a8c7844ffa367",
+      "sha256": "887dda265dc5f61ad4a04b9d0da98c059f6d93d08ff79180afbdafa7a000d75e",
+      "bytes": 5748
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-09-sdd-task-scoped-review-dispatch.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "57cc5fc076d27878adc0450f0c7c196eb64cb1bb",
+      "sha256": "1597b91dbf9f8113533c6da8410607c5ac6c47db92b043a1284fff075b037aa8",
+      "bytes": 28766
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-09-visual-companion-issues.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "09d6c1d445ee22eede4115a6ed2f0184e0b4e190",
+      "sha256": "bf939ca1e1398f54e1950193299084836e45767cb00735342e3d7c31ff1fe31e",
+      "bytes": 18930
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-10-visual-companion-auth-hardening.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "e290dded74e1d45a6fc58066bc70def9814de1cc",
+      "sha256": "7387fa4ddbc9bf071088372802c9aed6e44b224875291d2309007d76929af2f2",
+      "bytes": 23632
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-11-visual-companion-final-hardening-fixup.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "eec99e51e96d293dc71b221bf5c67a4f9906fa3d",
+      "sha256": "5604d33566ba5ca9940924819892a6d3f095a8704e2705e3fcc64a23334ca2f3",
+      "bytes": 36149
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-06-sdd-plan-scoped-workspace.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "74f225bf6fa299ed9c317773ffffb53a741887d9",
+      "sha256": "2d1b484cd2a4ead41fd5be842ccbc4c114b7b5eb52135c79190a6f756acbfd39",
+      "bytes": 48630
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-15-sdd-fix-loop-redesign.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "93fdc82eaffe2c1141f73f9476dc12f1bbb759de",
+      "sha256": "83189840f8591276c481187dc742f99f3e6add14eec0f7a782b5150a89024648",
+      "bytes": 77641
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-30-codex-efficiency-fixes.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "7c689bf7aa168530d3797adc7e8dc25488daa529",
+      "sha256": "78e7b8cd163ee78ac16a9ba9fbfffe3ae98b7711c092d75c7283bd325fdf42f7",
+      "bytes": 52609
+    },
+    {
+      "path": "docs/superpowers/plans/2026-08-06-hermes-version-bump-wiring.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "8fccfbf36f22c2f6c910448f1932deaee692c73e",
+      "sha256": "3a9669467c0db792fb1465ccee38e086349b8415aa7077e1d6b8633f47eab208",
+      "bytes": 9551
+    },
+    {
+      "path": "docs/superpowers/specs/2026-01-22-document-review-system-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "f8f611ebf404a923a8b20d659d4cea56e06124d0",
+      "sha256": "19dd839168b9e4a072985e8941aa3ae7cf9101357111620755d50dbeb1bea04b",
+      "bytes": 4723
+    },
+    {
+      "path": "docs/superpowers/specs/2026-02-19-visual-brainstorming-refactor-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "46f88bf3dc1c7d41aa41f221ebfe5fc943ae6572",
+      "sha256": "f27d0f9c33cc4f34101fd676d48e73d6259e6cd4e1b3adc477ea81f4c7557af7",
+      "bytes": 9445
+    },
+    {
+      "path": "docs/superpowers/specs/2026-03-11-zero-dep-brainstorm-server-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "d92e89fb258091132cbf54c8d9e04c412fe3634a",
+      "sha256": "8f29bac7d4df2b51062c005fe4d591140f1da3ab2030b28537df6f964637b9e9",
+      "bytes": 6021
+    },
+    {
+      "path": "docs/superpowers/specs/2026-03-23-codex-app-compatibility-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "c3fecc04cc4af01602f8604035688b59e3a87311",
+      "sha256": "f351216f0b8abb5f08a9209d71ec3c218c79b1ba9d6a1c68aec990ef00e31a53",
+      "bytes": 13369
+    },
+    {
+      "path": "docs/superpowers/specs/2026-04-06-worktree-rototill-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "11c854e7eb6b3cce250784bb6596c363d027ad95",
+      "sha256": "757ce61bbcd16dcb8f61fa69778ca7a3b1d26f7a11a0fcea3d302fd99a52ebae",
+      "bytes": 20120
+    },
+    {
+      "path": "docs/superpowers/specs/2026-05-05-platform-neutral-config-refs-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "d3a3cf56ab061567bd77540c78ef346cbad3f94e",
+      "sha256": "7a3c5e5fb77a3f8a500e9406283653cfee5edf1b98e58d5f267c5f21905eee19",
+      "bytes": 4886
+    },
+    {
+      "path": "docs/superpowers/specs/2026-05-05-platform-neutral-prose-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "34066b1ce30fec2d272e0747b03cee6b8ea73f52",
+      "sha256": "d55fa30a3b1422f8364a81f49c755ada9cc792b2cc10193b1dbd43c551918c19",
+      "bytes": 6038
+    },
+    {
+      "path": "docs/superpowers/specs/2026-05-05-platform-neutral-readme-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "d6492ec83d93222e4d376d02361ea311d0a6d96f",
+      "sha256": "63eb346415386c6850832f4b7414d03570a033eaf37de0b60d2ec4834169896e",
+      "bytes": 2100
+    },
+    {
+      "path": "docs/superpowers/specs/2026-05-06-lift-drill-into-evals-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "b3e63e5a66557477dfc67b8855dfc80d331dfa55",
+      "sha256": "fac3785f6f779bd899a6e93bcd60a934b4946ce4f7e8b6129d7910979650a6a1",
+      "bytes": 21059
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "23cdd4a7cc5d685ea64fd3c0c0cb9065f28bec0a",
+      "sha256": "08b6b77be0d3b95e1d19a3dc320b93bba52917ca9beb0084fd74ecd75c015b59",
+      "bytes": 17835
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-10-positive-instruction-redesign-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "1ec77cf902cbe3f3261d9d27693416a651e785bb",
+      "sha256": "3a87b9e873728a3a4331437eb90f9fc5f4c9d7d0b88a931cce2bc3bda041b68b",
+      "bytes": 10590
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-10-strict-cost-sdd-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "dfec87cfdeac32efad18936ec9b734907e1b019b",
+      "sha256": "e8865d184479ffd4f2fe2c3072bf6a2b70179bbb4565cd6cefcbcb127c9f9b28",
+      "bytes": 15315
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-10-visual-companion-auth-hardening-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "16bf41af5173f3cb69a4cba7356aa2fe24a50d00",
+      "sha256": "8d97d0384c61c0400fb67429a4384ad989bdc11953cce160069c368ac1f7e362",
+      "bytes": 8314
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-11-visual-companion-final-hardening-fixup-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "30f588921355534c9709a04d2208bda1318b9004",
+      "sha256": "78c4fbc2b609b1fe3ca0d7aba0f4d800511baf069355d25b37da5cf957dc0e7c",
+      "bytes": 12956
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace-eval-results.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "2ee1872cf8587c2720215e473128552b32366c5e",
+      "sha256": "c4d2f3f086648ee6b949fd0ed999dd7b0a3a8d45ba290b2024389c66b2ed95b7",
+      "bytes": 24547
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "ada12023105cee7060c662d5f0ef12d1202df3df",
+      "sha256": "301328cb8dec833dc35e05e90b4c10a6e67ebd915b33a3a5d34f83927094815d",
+      "bytes": 10210
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-15-sdd-fix-loop-redesign-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "89e3e24bf4cb608cfc2959195ad54403c7c992b3",
+      "sha256": "9ed33fe2821fd9d61e198c03e0377a9151294737a6ea34074637c1eef98c1a06",
+      "bytes": 10963
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-30-codex-efficiency-fixes-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "5bb1307d9259abde0cb95ac0fd220938b0da2afd",
+      "sha256": "6a6f81dcea03ebb8ffa710536fc92faab285c7bc894430c3348eb0bfa3fea926",
+      "bytes": 12583
+    },
+    {
+      "path": "docs/superpowers/specs/2026-08-05-hermes-version-bump-wiring-design.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "4629b0cd3cf6f8e81bf538069d24d7798dce392e",
+      "sha256": "f649e3afbd3a14df4c1ac5bd1942ffb4846129836f20b5f2aa3263fd3c19ed69",
+      "bytes": 2196
+    },
+    {
+      "path": "docs/testing.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "414d69790c708df23b3da1ef21365b40f4112ec3",
+      "sha256": "e270a51e42e8a5d19c9b64f35262b096a1a6d3a1dcc76f1e11bb37ac5f895368",
+      "bytes": 2218
+    },
+    {
+      "path": "docs/windows/polyglot-hooks.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "d1bcb84ec10020aa9410655e2b55a547dc59cd89",
+      "sha256": "476cb301b99f0419ca7af197d1be8a8f777ef0e62fb9fc64a896a0e007e9d080",
+      "bytes": 6579
+    },
+    {
+      "path": "gemini-extension.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "ccb77ae2169968e60f49914f97aa1a25ffe98e18",
+      "sha256": "3200d324e4ce3c47edf5cf4b251878febb9c32f64ec33bb9eb58c06d96c8e3b9",
+      "bytes": 187
+    },
+    {
+      "path": "hooks/hooks-cursor.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "84e6d33874ab5926035e35bc13dccf21244bb079",
+      "sha256": "53d8ceb3ff5d8bb1c4f283f238cc868b8c1af22e40a3ac30f6d6e4173effefbd",
+      "bytes": 137
+    },
+    {
+      "path": "hooks/hooks.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "67975137aafc8a097bdd1c2b51fea3989b8ad6c0",
+      "sha256": "47fd72cc8bedf31c72702b35b4ed7bab670294d658c4ce518330337525a3798b",
+      "bytes": 334
+    },
+    {
+      "path": "hooks/run-hook.cmd",
+      "git_mode": "100755",
+      "git_blob_sha1": "ceec3a732d6251abb3c65ba860b7cc5d1f21dfb8",
+      "sha256": "d3d9c6199678dab2858e60509dde5e7414f13c2a2b5e48a38b1d368b6e1d6abb",
+      "bytes": 1460
+    },
+    {
+      "path": "hooks/session-start",
+      "git_mode": "100755",
+      "git_blob_sha1": "93a6bc2c6b7269c704378cb6a61fce6aea7ff631",
+      "sha256": "88a060272ca8047e0d1cd73a016e1cebba8396807a44be1e296d7c02dcbb9934",
+      "bytes": 2274
+    },
+    {
+      "path": "package.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "3a84ce88c91344a7931d3f1d156d2ade317d6577",
+      "sha256": "4d6b01eb1842d8d1f7c8597c37a3828841f8e38a53dca160017169c250c8935c",
+      "bytes": 433
+    },
+    {
+      "path": "scripts/bump-version.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "14ead00291407c584f58a437f3acf5be1e772e78",
+      "sha256": "fc96339dad5f54ffcef3393b28542dbe93ec168573c012d9c599603009e80006",
+      "bytes": 7461
+    },
+    {
+      "path": "scripts/lint-shell.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "190db0140d9e250af4cd8edabb42995c0201803c",
+      "sha256": "aa34cc2dad4b130231bcf21fdd18f3f91e8fd7ab80d88a82a13e1395f32756f8",
+      "bytes": 4088
+    },
+    {
+      "path": "scripts/package-codex-plugin.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "5308e28d9c3460b130abd7e3185374294b33d00f",
+      "sha256": "2541617b86519273428d12d18a5f7ec852ac39cfdec74622c01ce71a504bb80d",
+      "bytes": 10338
+    },
+    {
+      "path": "scripts/sync-to-codex-plugin.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "bdaa13a357defed6b43e0a769b0ec06e9099b6d3",
+      "sha256": "f5cd5d240dfdda46b68deaee50b108ca416e07eb6fd2571e034c86548c3ce6c1",
+      "bytes": 14995
+    },
+    {
+      "path": "skills/brainstorming/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "b56a3b5ed6ea0d6216501e0e401ecb00a1b4675f",
+      "sha256": "74edf03ea6d24ef53db48677b93558d14a979bdf052ca3f57ecdca0c66791608",
+      "bytes": 15456
+    },
+    {
+      "path": "skills/brainstorming/scripts/frame-template.html",
+      "git_mode": "100644",
+      "git_blob_sha1": "f540bb8a4f88107e2b37b2871a4c1a55a3b6f720",
+      "sha256": "6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e",
+      "bytes": 8094
+    },
+    {
+      "path": "skills/brainstorming/scripts/helper.js",
+      "git_mode": "100644",
+      "git_blob_sha1": "e11d26489ce248f37af3e4dd01ddec6a4e88287f",
+      "sha256": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3",
+      "bytes": 5615
+    },
+    {
+      "path": "skills/brainstorming/scripts/server.cjs",
+      "git_mode": "100644",
+      "git_blob_sha1": "a828b35af64d5c64ca68b9ec78473999ce698874",
+      "sha256": "2d2961ea8d11f56c5f4c3a1a68d22709efa5d7601a2246d8c880774e7e9e8412",
+      "bytes": 25693
+    },
+    {
+      "path": "skills/brainstorming/scripts/start-server.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "016a8e4870142ce2adbe81a021d8b6b9073e7618",
+      "sha256": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847",
+      "bytes": 6908
+    },
+    {
+      "path": "skills/brainstorming/scripts/stop-server.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "7cacfe9440043f7a46eac555cd835fad0769c425",
+      "sha256": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf",
+      "bytes": 3263
+    },
+    {
+      "path": "skills/brainstorming/spec-document-reviewer-prompt.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "60993129de3c445efeff53987b5297dc1acf3eb1",
+      "sha256": "95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457",
+      "bytes": 1747
+    },
+    {
+      "path": "skills/brainstorming/visual-companion.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "c145e64388d4441710da016ea665fed5699e2e91",
+      "sha256": "77eb44a4ec3408bb3dafb872288ecd94beb8cf21da4f2bafa54fd08255d7808b",
+      "bytes": 13383
+    },
+    {
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "3fa091b348bbe0a18eaa0e17e9092c97f7005cbe",
+      "sha256": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c",
+      "bytes": 6078
+    },
+    {
+      "path": "skills/executing-plans/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "b51d97d2cc4c2ecc5eabecf27e499aa8c933efac",
+      "sha256": "c4c3d8b628c51114cd165fb8246fe02744cd8be180032328391252e653028d9b",
+      "bytes": 2305
+    },
+    {
+      "path": "skills/finishing-a-development-branch/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "fa8aecaf8813f1b19d19996f7957d1b0121f2d9c",
+      "sha256": "8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65",
+      "bytes": 7781
+    },
+    {
+      "path": "skills/receiving-code-review/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "950da7b74bf6dbed6b8726d12ddadd65a9f5fda7",
+      "sha256": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438",
+      "bytes": 6203
+    },
+    {
+      "path": "skills/requesting-code-review/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "fa4f2f9965591d6d8a7ef4ad47e6ba4d5ac344d0",
+      "sha256": "d71cc01ba56d2325cf8af5f7c11837819b63ecd57de0bfdb812f7f3ff7751df8",
+      "bytes": 2956
+    },
+    {
+      "path": "skills/requesting-code-review/code-reviewer.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "b898cb982e8a368e847d31136ac106001173b1d5",
+      "sha256": "5eca5fcfd48a50e0a526ce5ffd64bf625d6b81bb46d11795274dae451fe6ffd4",
+      "bytes": 5669
+    },
+    {
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "aac35b91c07af15eca580a205eb0c894b86e87c8",
+      "sha256": "8dd1b8e698edec3700c6d89517dbe96febd3bacd3f6ea21c1a3569c62ea104b5",
+      "bytes": 32339
+    },
+    {
+      "path": "skills/subagent-driven-development/implementer-prompt.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "5c8ecd61fba036263bf88d0af24d47125780efa0",
+      "sha256": "81dd9d5a3fb0b09b96b5829f03b9796842f3199ef7591d1ba1c2db2a515f64d0",
+      "bytes": 6335
+    },
+    {
+      "path": "skills/subagent-driven-development/re-review-prompt.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "ad74b10b30762affc44173f8ec3228d2877f372f",
+      "sha256": "db0d5849478bc79cbde97b9b2cf0e58b50be8b8ed18464b0252c2bf27b6440a6",
+      "bytes": 4756
+    },
+    {
+      "path": "skills/subagent-driven-development/scripts/review-package",
+      "git_mode": "100755",
+      "git_blob_sha1": "31852e2abbeb9a41084f67a9f2ef3cfc3378bce9",
+      "sha256": "fac3d4bd7f94369e8037b9ead2a8a502dca6ab333902b560b9455dbb3c450ebe",
+      "bytes": 1469
+    },
+    {
+      "path": "skills/subagent-driven-development/scripts/sdd-workspace",
+      "git_mode": "100755",
+      "git_blob_sha1": "4e2d16802ecaa23eb9a682663e4c356c4aa5a656",
+      "sha256": "95a09d9d3983ad1aafd093ca72b4587946dea885c6e302caa02a779a2f911c31",
+      "bytes": 1586
+    },
+    {
+      "path": "skills/subagent-driven-development/scripts/task-brief",
+      "git_mode": "100755",
+      "git_blob_sha1": "612e14a1ee7ca9c0078d896325935759a1827c24",
+      "sha256": "d6954ef7841c7da3d77373e6ff5118b3f2f2e998606fd95d33e6527851bce044",
+      "bytes": 1158
+    },
+    {
+      "path": "skills/subagent-driven-development/task-reviewer-prompt.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "ce796948232b6ae5fb65fd2d1f2f864530201a2e",
+      "sha256": "eea23e33ec570c3041f40e9569fa711d61b8029f9eecf908345138aa1c6e61ab",
+      "bytes": 9021
+    },
+    {
+      "path": "skills/systematic-debugging/CREATION-LOG.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "9aa03092809feaf93c9bfa985252f6f1c9624692",
+      "sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789",
+      "bytes": 4257
+    },
+    {
+      "path": "skills/systematic-debugging/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "095d194ac041502905f15b01d22d294fb94db8b2",
+      "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787",
+      "bytes": 9465
+    },
+    {
+      "path": "skills/systematic-debugging/condition-based-waiting-example.ts",
+      "git_mode": "100644",
+      "git_blob_sha1": "703a06b653160d060bbf46ab5c6e0cd7446bd592",
+      "sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e",
+      "bytes": 5054
+    },
+    {
+      "path": "skills/systematic-debugging/condition-based-waiting.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "70994f777c586f7d4c43033aac34c7cf0da6688b",
+      "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26",
+      "bytes": 3516
+    },
+    {
+      "path": "skills/systematic-debugging/defense-in-depth.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "e2483354dc2b62478a2624e34ca18bc0efe887b2",
+      "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7",
+      "bytes": 3650
+    },
+    {
+      "path": "skills/systematic-debugging/find-polluter.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "985f5d08ccf8a3f2d40739cfcaf4413bb24bf1cb",
+      "sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c",
+      "bytes": 1986
+    },
+    {
+      "path": "skills/systematic-debugging/root-cause-tracing.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "12ef5222e24e19ab92172b82b69ef1b0c30d9bfa",
+      "sha256": "6b0622269e098ca1399e123e553fd385f0b6412d88ef0e9c4f5a8ea9cf1cec7b",
+      "bytes": 5316
+    },
+    {
+      "path": "skills/systematic-debugging/test-academic.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "23a6ed7a2044e0c44d74c3101406140f4851aa41",
+      "sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486",
+      "bytes": 653
+    },
+    {
+      "path": "skills/systematic-debugging/test-pressure-1.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "8d13b467e4a98abfffd12161cbc3c418021d6023",
+      "sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a",
+      "bytes": 1900
+    },
+    {
+      "path": "skills/systematic-debugging/test-pressure-2.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "2d2315ec8a24ca872bc80d2f4056468ba051462a",
+      "sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016",
+      "bytes": 2283
+    },
+    {
+      "path": "skills/systematic-debugging/test-pressure-3.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "89734b86fdc756488df315d53e5c3ac2d3752cd8",
+      "sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708",
+      "bytes": 2692
+    },
+    {
+      "path": "skills/test-driven-development/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "4320d8879a639d0536c2239bb80c9d7257ad8947",
+      "sha256": "bf1b8216e523851a411e91d429a7c1c2a173e79d88957bc78e348218d50edd54",
+      "bytes": 9015
+    },
+    {
+      "path": "skills/test-driven-development/writing-good-tests.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "d3c4482fd30b4f9084bb61545fe73939a7502c28",
+      "sha256": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1",
+      "bytes": 8268
+    },
+    {
+      "path": "skills/using-git-worktrees/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "1381dacb3516b94382dd6ec736ede21ee8ede2b3",
+      "sha256": "8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd",
+      "bytes": 6813
+    },
+    {
+      "path": "skills/using-superpowers/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "7ab2eb678f649c8befb94512359ee0b6e9a9a9a4",
+      "sha256": "30f2ab78e20ddc27ee7158ae8d4a2abe161c360981c7cc3548070913142d3dc3",
+      "bytes": 3108
+    },
+    {
+      "path": "skills/using-superpowers/references/antigravity-tools.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "2e1eac90534af6e1f27df4e18410be8a7b442448",
+      "sha256": "4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0",
+      "bytes": 1495
+    },
+    {
+      "path": "skills/using-superpowers/references/codex-tools.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "e4488fb224bb0fa0a33e9ac7dc961174e9f0c150",
+      "sha256": "1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7",
+      "bytes": 4762
+    },
+    {
+      "path": "skills/using-superpowers/references/gemini-tools.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "b01b65238a50981aeed22ae52ee20f8b55d16b42",
+      "sha256": "62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965",
+      "bytes": 4598
+    },
+    {
+      "path": "skills/using-superpowers/references/hermes-tools.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "0f1fa57bc1b495462e75c6ce11e798245a34987e",
+      "sha256": "e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190",
+      "bytes": 1964
+    },
+    {
+      "path": "skills/using-superpowers/references/pi-tools.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "0c1f21713a45255ece4144fd2fee353e4ed4f90e",
+      "sha256": "703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5",
+      "bytes": 1242
+    },
+    {
+      "path": "skills/verification-before-completion/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc",
+      "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+      "bytes": 3646
+    },
+    {
+      "path": "skills/writing-plans/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "f74605bfa9af7a3fb7e4ad7f17750a86a9b0d728",
+      "sha256": "48508f44bbfd7d24b029fbf3a314f3cd14c9615599059366e922f47b8dc08cf2",
+      "bytes": 7053
+    },
+    {
+      "path": "skills/writing-plans/plan-document-reviewer-prompt.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "1c12c1d6180395262d7150bdb12a9a90efc9cfa0",
+      "sha256": "aa728b96aad603c8be28875a4305637f6c984aa81ffcadcb13e743202fa2a0c7",
+      "bytes": 1713
+    },
+    {
+      "path": "skills/writing-skills/SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "f33f39f523c8a3ae2ec0eaf365a524571df8ff3d",
+      "sha256": "d34db5c8aed6a4e0440132bd0613aace70a693ec7819d5637ad77481d8e10d1b",
+      "bytes": 26360
+    },
+    {
+      "path": "skills/writing-skills/anthropic-best-practices.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "15ea9eae223d9081b602618849791c07a7758f3d",
+      "sha256": "217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a",
+      "bytes": 46197
+    },
+    {
+      "path": "skills/writing-skills/examples/CLAUDE_MD_TESTING.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "47881fc85bd6c01b32b84d52ed9a0c73c8d6a089",
+      "sha256": "0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0",
+      "bytes": 5423
+    },
+    {
+      "path": "skills/writing-skills/graphviz-conventions.dot",
+      "git_mode": "100644",
+      "git_blob_sha1": "3509e2f028cacaa8118cbc8c80025efb089ec28e",
+      "sha256": "e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694",
+      "bytes": 5970
+    },
+    {
+      "path": "skills/writing-skills/persuasion-principles.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "9756416a59600b70ecca4044e0919ee7d4a37b21",
+      "sha256": "a51bc9bf75189ea73a27b3fb504a2fdfdb966fb1f7f1cdf03203230a216ccc03",
+      "bytes": 5901
+    },
+    {
+      "path": "skills/writing-skills/render-graphs.js",
+      "git_mode": "100755",
+      "git_blob_sha1": "59e74b54e8538ff0a358d05c770479b3eb8484aa",
+      "sha256": "c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196",
+      "bytes": 4968
+    },
+    {
+      "path": "skills/writing-skills/testing-skills-with-subagents.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "a5acfeac86f34c7bc625d064e10c8a2f8180b696",
+      "sha256": "c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade",
+      "bytes": 12558
+    },
+    {
+      "path": "tests/antigravity/run-tests.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "2d0c869c9ea59d22dc71c854c792d7002c07d8a2",
+      "sha256": "76355b01132d4f27cc5545c15926eb0c3614d38db2b5d6988a2d818918d9eaf1",
+      "bytes": 319
+    },
+    {
+      "path": "tests/antigravity/test-antigravity-tools.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "e10edd42c5002a77b37772a43823fe454b6829e2",
+      "sha256": "8114d937d2ff960262e5d281a7e1ea2f95eb05ceb1690ac91b0db059e0c83799",
+      "bytes": 2146
+    },
+    {
+      "path": "tests/brainstorm-server/auth.test.js",
+      "git_mode": "100644",
+      "git_blob_sha1": "fc5bb79ec85264517754dbf1b61e26a0a21bf88a",
+      "sha256": "8efa43628b582973dcc543c0768e91066cf9834292e2e724657c6801b63df062",
+      "bytes": 12084
+    },
+    {
+      "path": "tests/brainstorm-server/branding.test.js",
+      "git_mode": "100644",
+      "git_blob_sha1": "6acda4e3901123b6c10e1c19c302e87a3041435b",
+      "sha256": "b116f645b46130a3a58867493863a1398cf5426375d695203c858c95eb5e8d02",
+      "bytes": 12213
+    },
+    {
+      "path": "tests/brainstorm-server/browser-launcher.test.js",
+      "git_mode": "100644",
+      "git_blob_sha1": "4bb9825c82fe2239ac6705cb741860462a517ca2",
+      "sha256": "ffb9ccecf27968b9359049ff96b50725669b1f86863f88b583b9aa0c3aa37c94",
+      "bytes": 1768
+    },
+    {
+      "path": "tests/brainstorm-server/helper.test.js",
+      "git_mode": "100644",
+      "git_blob_sha1": "604b611ad4315f82919b45505d776f74922d8d4d",
+      "sha256": "9917fc944e8c5594430ba2600035ff5fd8212119b9cae2d62c75f5725de94061",
+      "bytes": 8240
+    },
+    {
+      "path": "tests/brainstorm-server/lifecycle.test.js",
+      "git_mode": "100644",
+      "git_blob_sha1": "c43d8c0de2c249653a870257ea5e22ab14f7b4ae",
+      "sha256": "8146fc31bd814dec0e497da6dc1c9423e4352e0fb1c3cdebd1b9db42a2ac8d8e",
+      "bytes": 23092
+    },
+    {
+      "path": "tests/brainstorm-server/package-lock.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "c194943f0e6cd346cbf459c1367121527a0dce32",
+      "sha256": "80f45a9d8857e27d9363d47789284a26d13fb47388fa8596ef0db7207e6d7c10",
+      "bytes": 861
+    },
+    {
+      "path": "tests/brainstorm-server/package.json",
+      "git_mode": "100644",
+      "git_blob_sha1": "0cb87f9dabbfd4e9dc754835e9d30e3af74f3088",
+      "sha256": "d785483894bfedbccf9731fd7ed52f959973f62dc9c42a8a7407fc7779d220c8",
+      "bytes": 374
+    },
+    {
+      "path": "tests/brainstorm-server/server.test.js",
+      "git_mode": "100644",
+      "git_blob_sha1": "5d62323cb13b233cbf7016cac4afbf2be24e3595",
+      "sha256": "fd1cc628222a6fcc657461b84f85f3b50d5a9709056dc9232241f9cb4182593a",
+      "bytes": 23860
+    },
+    {
+      "path": "tests/brainstorm-server/start-server.test.sh",
+      "git_mode": "100644",
+      "git_blob_sha1": "a4802dab696221ae3000a71b4cf3a0cd170ad558",
+      "sha256": "fb0c928e206fbd6a0fe77e750198d71ae0c331e361b13e9a8b8742cdb22302b5",
+      "bytes": 3099
+    },
+    {
+      "path": "tests/brainstorm-server/stop-server.test.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "cbe89837154902520f9503964a242709b0066a80",
+      "sha256": "35e150e95f0e97d50470f2c0a30bc7c9c8c5cb7721c53dcff887b430067490db",
+      "bytes": 6346
+    },
+    {
+      "path": "tests/brainstorm-server/windows-lifecycle.test.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "2a18495ae89465480dc8105599d5e522ef972379",
+      "sha256": "7dc8e09edfe0a4cc34550fdb0e5ae5117758991d490756971be51c88e4f5908d",
+      "bytes": 12043
+    },
+    {
+      "path": "tests/brainstorm-server/ws-protocol.test.js",
+      "git_mode": "100644",
+      "git_blob_sha1": "8e98bc32b167fafc19e23a3b5ee6217e13a359e4",
+      "sha256": "abd0a10eaffe4e30a9918c79c7692775db36c8a3e132e04d52ec06d6cddaa132",
+      "bytes": 15002
+    },
+    {
+      "path": "tests/claude-code/README.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "90f1fe1aef3a4fc2ad623a51dcc48e0e2ecd24a9",
+      "sha256": "df8cc7a1709b5fd881f41f6e7afc180f1b686c14b97624c27e4957a174c09911",
+      "bytes": 4724
+    },
+    {
+      "path": "tests/claude-code/analyze-token-usage.py",
+      "git_mode": "100755",
+      "git_blob_sha1": "c408162686d6a720887f265b6257cf41664f1d96",
+      "sha256": "b3b124b975086e66540dca1328d7b6b75416450b0c93fc246f0d7d148fc2394c",
+      "bytes": 6733
+    },
+    {
+      "path": "tests/claude-code/run-skill-tests.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "83217cdad27248ae6ee521aef603ba13322805f3",
+      "sha256": "c739ed075010ccf0ef04d5df9da8f3a9dc9f608feac7db8073bbd8cf903511d3",
+      "bytes": 5296
+    },
+    {
+      "path": "tests/claude-code/test-helpers.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "9e187610d6a973c6db0aed91dfb8deadfcac3e78",
+      "sha256": "b06a890c9d371195d8f256b1227607dd32ad28831658be1033756cc8dbcd86a7",
+      "bytes": 5438
+    },
+    {
+      "path": "tests/claude-code/test-sdd-workspace.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "841723016a9ceca8028f02e5e20ac811468c2ec2",
+      "sha256": "af48e7cd741b6b5614d94bb21e28a015e0f8729e029b6945ec7352be64b1d7c8",
+      "bytes": 6781
+    },
+    {
+      "path": "tests/claude-code/test-subagent-driven-development-integration.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "a783648314a4cf6f2e61af3c7437fc4b9f24e315",
+      "sha256": "0794d17e3cc5d8a64c07a6c181538e1142819b86382d171f677510cfe6a3f722",
+      "bytes": 10779
+    },
+    {
+      "path": "tests/claude-code/test-subagent-driven-development.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "151fc64d04668567c4980301dc28f323bd5424b5",
+      "sha256": "37e9a1fbb20f9f6ca2e7eb62f16b4b04c90da2874ec48ec3d2cc5c73ed99155d",
+      "bytes": 5511
+    },
+    {
+      "path": "tests/claude-code/test-worktree-native-preference.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "077ea19c360b66a4ab16d2c91d2bbc66e043704c",
+      "sha256": "1c0a94fb097ad33186bb7ea2b0321b11d8ba92ed8c6ef61464a2246eec33acf6",
+      "bytes": 6680
+    },
+    {
+      "path": "tests/claude-code/test-worktree-path-policy.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "58caad7a09bc395fb2f4aefede6db56dfd0223de",
+      "sha256": "3498f973a9cf288f2959b7a02fc3acea09ee11650b46d689aef81b394f8ab85c",
+      "bytes": 2546
+    },
+    {
+      "path": "tests/codex-plugin-sync/test-sync-to-codex-plugin.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "01de3948477d6fa213130562ef0da3517be9e2b5",
+      "sha256": "f13e38b0a0fcb955bd362c1c91868b47e29c0e7717017e2d145f4069e5096e2c",
+      "bytes": 24022
+    },
+    {
+      "path": "tests/codex/test-marketplace-manifest.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "4301a06eec1cd4d8874571ac5f95b8295d459fd6",
+      "sha256": "9c5afb24318bd959606f5063f444042e08e6fc2c6ff8c4988760476021e4ec90",
+      "bytes": 2889
+    },
+    {
+      "path": "tests/codex/test-package-codex-plugin.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "947cb6db1f920278a9c73d021d6c79aa5ec22af8",
+      "sha256": "bbf76d50eac33b60d73318946bc1418a6e6c6d52cdd918f39c7b18b8eaa0b0f4",
+      "bytes": 9650
+    },
+    {
+      "path": "tests/devin/test-devin-plugin.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "16ea31f4d6fab49994d0e92ac73a5f150edcb627",
+      "sha256": "e156be13b2e902449ef8bd1836b9dc60a7fc5f2f670896f4faf621d9a1f3a6e4",
+      "bytes": 2610
+    },
+    {
+      "path": "tests/explicit-skill-requests/prompts/action-oriented.txt",
+      "git_mode": "100644",
+      "git_blob_sha1": "e998dc5daafa6b4dd78ef0dac3174020c95edc7a",
+      "sha256": "4ee13db41ce891b5b328f8ad5284e516253f87dc65307df0e60a2713a47442d1",
+      "bytes": 173
+    },
+    {
+      "path": "tests/explicit-skill-requests/prompts/after-planning-flow.txt",
+      "git_mode": "100644",
+      "git_blob_sha1": "5881908bb900e2f73949860033db303ed5efdd1a",
+      "sha256": "7da11dd7918b083c43087cd21e241d3b397d5488ba1e06bebed74488c4827d22",
+      "bytes": 551
+    },
+    {
+      "path": "tests/explicit-skill-requests/prompts/claude-suggested-it.txt",
+      "git_mode": "100644",
+      "git_blob_sha1": "efb6c389c6b370cd602041945756d19da8df8162",
+      "sha256": "cb46492d9f905ebf6098aa6d0884f046a1b863b39036e5ec9a3244991b758d6f",
+      "bytes": 498
+    },
+    {
+      "path": "tests/explicit-skill-requests/prompts/i-know-what-sdd-means.txt",
+      "git_mode": "100644",
+      "git_blob_sha1": "c995fc7832509a9510814659974f2792abe9c706",
+      "sha256": "64f33d0b328471c800541e268996a91e360d625bfe151b476b65bb64f0f1cd8d",
+      "bytes": 366
+    },
+    {
+      "path": "tests/explicit-skill-requests/prompts/mid-conversation-execute-plan.txt",
+      "git_mode": "100644",
+      "git_blob_sha1": "4a136965e60c65e6db2ea9c6eeec59420fb416cb",
+      "sha256": "601301c1da6e138427c5c1b18acf34b3931bdd08397c3aec7bc94bec30d5c606",
+      "bytes": 119
+    },
+    {
+      "path": "tests/explicit-skill-requests/prompts/please-use-brainstorming.txt",
+      "git_mode": "100644",
+      "git_blob_sha1": "70fec751959d5af901b651db5a6c3ed3a3c987f5",
+      "sha256": "de9508ffad9e29ee8ddda26ed9403b4a650e1081df39800edb6b56a6a3a859dd",
+      "bytes": 73
+    },
+    {
+      "path": "tests/explicit-skill-requests/prompts/skip-formalities.txt",
+      "git_mode": "100644",
+      "git_blob_sha1": "17f781d5c0fd273f75635d7e6d7a669e909b88a2",
+      "sha256": "b4c1fc115fc67d9919a29db6d8ceaa57a41933bde343168bd0858a62cfe11c51",
+      "bytes": 171
+    },
+    {
+      "path": "tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt",
+      "git_mode": "100644",
+      "git_blob_sha1": "2255f99603530d091b50a61e4a127578ec3a9415",
+      "sha256": "c2499520cb588008437148facc965800e4a302baa1cc4d726f5b02bfcfc5f3e1",
+      "bytes": 36
+    },
+    {
+      "path": "tests/explicit-skill-requests/prompts/use-systematic-debugging.txt",
+      "git_mode": "100644",
+      "git_blob_sha1": "d4077a21fed29a12e062bc3a449bb6c1ee68e71f",
+      "sha256": "4aa7a8da6f68bb22d2b1fb66aeb26c1bed6fdf86d33d2d6f7a9752334856a990",
+      "bytes": 52
+    },
+    {
+      "path": "tests/explicit-skill-requests/run-all.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "b4c5707296868837c5c394116d7f5d3fea0fd9f7",
+      "sha256": "b657ef562b6ce3d02b3422eb5ab8571be5545525249088034ab36c27343b95cc",
+      "bytes": 1977
+    },
+    {
+      "path": "tests/explicit-skill-requests/run-extended-multiturn-test.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "69ccd0a4800b345afa0c421065b1435aa680c82f",
+      "sha256": "1004578e3ef68d6fda8646c9257d27dd4ca30c4c1bdc986a50fbcb929ea0934d",
+      "bytes": 3407
+    },
+    {
+      "path": "tests/explicit-skill-requests/run-haiku-test.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "9079e9d5cfccefe9192107ec180b6946a69158f8",
+      "sha256": "27b92722271fd25dfcad9b04e8c45b81e2a51a51005c3bcf13dd9d5a70567d01",
+      "bytes": 4042
+    },
+    {
+      "path": "tests/explicit-skill-requests/run-multiturn-test.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "d4c0adad2a0426b39638e2c354709e2c31d7244c",
+      "sha256": "dc22f0b1ed0d367811ecf046c942430d15e87f4b8b2b4cc8260d60e00bee6ecb",
+      "bytes": 4564
+    },
+    {
+      "path": "tests/explicit-skill-requests/run-test.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "821117c39cb8871293176e746101ad54c9c36df6",
+      "sha256": "841f1d014f231c84f441cc6b91f388cc3e9e788012e6d36f5e78406c1f4c9b49",
+      "bytes": 4327
+    },
+    {
+      "path": "tests/hermes/__init__.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "tests/hermes/conftest.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "561cd8ca522add8bed083d6c1fcad4442855b1c3",
+      "sha256": "daac0d99bc1848c35cf1aa85694d0dc752628acb876f552f65c15972942dd2f9",
+      "bytes": 929
+    },
+    {
+      "path": "tests/hermes/test_bootstrap.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "8b60153c697cc0d4f2e9963101b20ac7009c6208",
+      "sha256": "a4aaeb394779f3d22106866bfe67723301a5cf317dfad7a1386994eddd7a3031",
+      "bytes": 3341
+    },
+    {
+      "path": "tests/hermes/test_plugin.py",
+      "git_mode": "100644",
+      "git_blob_sha1": "9c6c4f0811a54b00111aefc15e26c9c450dbaeb7",
+      "sha256": "a159fbee0e56b0ff320a85642b5b38f703ba64382d1e3de0200889598af8dfa2",
+      "bytes": 5286
+    },
+    {
+      "path": "tests/hooks/test-session-start.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "c1508290e9813de1a7d20b24d3ca3c8927fbc11c",
+      "sha256": "427f5464b635504ab2dc1f2bde9aa0bce348e13be451985e541099219130e92f",
+      "bytes": 6243
+    },
+    {
+      "path": "tests/kimi/run-tests.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "f7bb21fe712beb59a4df90181a5de370e3d297c2",
+      "sha256": "fb53a9ce91ae119146764ef2d55c63a5d20b86198e2ee08759fbae8194177ff0",
+      "bytes": 127
+    },
+    {
+      "path": "tests/kimi/test-plugin-manifest.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "073ab84c1cef8bb71a025e8643e282d12e3c9bc1",
+      "sha256": "d7ca4db2e67c8611d3d1fe1fbf28fe41a33b187155563f1a553212df04250aaa",
+      "bytes": 2301
+    },
+    {
+      "path": "tests/opencode/run-tests.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "d9b100ef0d6b87c675924c0fb8ce7fbd4dde9fb9",
+      "sha256": "d2af80421663d1a4649e401b10fd8c111a1ae0b8dec4a50cb8adc2b59b726c46",
+      "bytes": 4323
+    },
+    {
+      "path": "tests/opencode/setup.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "cd2a732cd2d5ad030414b953e21b9e403ab88699",
+      "sha256": "0e8600fa5e56d7613f41d19732601397d2c18087a71da2801cc53443756a6348",
+      "bytes": 2864
+    },
+    {
+      "path": "tests/opencode/test-bootstrap-caching.mjs",
+      "git_mode": "100644",
+      "git_blob_sha1": "32149aed33037d7bcda36dc875546d390b501c78",
+      "sha256": "55dbc4be45609201f6969d56ffbe81e9a48444e55baec9fb54a58d1a75610ec3",
+      "bytes": 5233
+    },
+    {
+      "path": "tests/opencode/test-bootstrap-caching.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "958e9940b116ac764323030814436e6236b2979f",
+      "sha256": "b13d826fdae77feaf922f4009f544d0ad51ce722258dee997b252f76af70330a",
+      "bytes": 1060
+    },
+    {
+      "path": "tests/opencode/test-plugin-loading.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "83af3f197d668573cf276a81ee3326077a187243",
+      "sha256": "41389f92e160766cfb27bfd15849e3ef546427444f88d241506915044209bed0",
+      "bytes": 2589
+    },
+    {
+      "path": "tests/opencode/test-priority.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "b9f3e08a8e5e2c5dccfde33daefde0571db81bd7",
+      "sha256": "123a82b72f22a5a0d1be2c6cfb898bf4d8d772ee4c7ba2f4540562a1b62a0902",
+      "bytes": 6994
+    },
+    {
+      "path": "tests/opencode/test-tools.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "da79f3d5ede6d022a22a14a3087fcca60a621355",
+      "sha256": "ae8bfae51fd2d25b9659177ec257c0551bc521d7f9e7c60c34110497b501e182",
+      "bytes": 3383
+    },
+    {
+      "path": "tests/pi/test-pi-extension.mjs",
+      "git_mode": "100644",
+      "git_blob_sha1": "d7af9cb2ae125341eaab1e53bea8d2a2d7448dda",
+      "sha256": "0f84e8fe4190575e907a109e3b2540a21832ddac4f1bdb76f1074489f4f605c6",
+      "bytes": 5828
+    },
+    {
+      "path": "tests/shell-lint/test-lint-shell.sh",
+      "git_mode": "100644",
+      "git_blob_sha1": "141bcd9e4d912be2986a6b1ad9d1b6eaa4c69295",
+      "sha256": "e777907226ed8614fe1cbc06afd538e223e4081c368757b26a5f77dfb4355b40",
+      "bytes": 4719
+    },
+    {
+      "path": "tests/systematic-debugging/test-find-polluter.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "0902e7d9d606a94916a098f92312977397a7860b",
+      "sha256": "7c5ae1adb7c6e292b73eccba6ba442501c442aefe8c883a94c9fdd809d592cea",
+      "bytes": 2609
+    },
+    {
+      "path": "tests/version-bump/test-bump-version.sh",
+      "git_mode": "100644",
+      "git_blob_sha1": "195d88a11a4faea7d3844be2a3d7e47ed3b2ed4f",
+      "sha256": "5ee6381b450985934877a6fb3da71f769559f413419c616158cd6b79ff582ff1",
+      "bytes": 2259
+    },
+    {
+      "path": "tests/writing-skills/test-render-graphs.sh",
+      "git_mode": "100755",
+      "git_blob_sha1": "349cd47e66513703e0a850150938ea6e4bacafee",
+      "sha256": "c977fb34ec6614400673cc3d73e9979eb5428d35e1413c50ab4b1cef47eb7b3b",
+      "bytes": 2512
+    }
+  ]
+}

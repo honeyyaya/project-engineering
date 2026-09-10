@@ -1,0 +1,17 @@
+domain: testing
+components:
+  - id: superpowers.test-driven-development
+    kind: upstream-candidate
+    source: superpowers
+    path: sources/github/superpowers/ORIGINAL/skills/test-driven-development/SKILL.md
+    maturity: S1
+  - id: addy.test-driven-development
+    kind: upstream-candidate
+    source: addy-agent-skills
+    path: sources/github/addy-agent-skills/ORIGINAL/skills/test-driven-development/SKILL.md
+    maturity: S1
+  - id: local-verification-protocol
+    kind: local
+    path: SKILL.md
+    maturity: S1
+default_composition: [superpowers.test-driven-development, superpowers.verification-before-completion, local-verification-protocol]

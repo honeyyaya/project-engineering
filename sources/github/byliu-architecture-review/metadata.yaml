@@ -1,0 +1,11 @@
+source_id: byliu-architecture-review
+repository: byliu-labs/claude-skill-architecture-review
+url: https://github.com/byliu-labs/claude-skill-architecture-review
+license: MIT
+audited_commit: 0ca9a4946c50e1dba4737bb4ea75a06ad658959e
+audited_on: "2026-09-09"
+snapshot_scope: full repository tree at audited commit
+maturity: S1
+role: Architecture reference
+original: ORIGINAL
+manifest: manifest.json

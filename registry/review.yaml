@@ -1,0 +1,25 @@
+domain: review
+components:
+  - id: addy.code-review-and-quality
+    kind: upstream-candidate
+    source: addy-agent-skills
+    path: sources/github/addy-agent-skills/ORIGINAL/skills/code-review-and-quality/SKILL.md
+    maturity: S1
+    role: default five-axis quality gate
+  - id: fluidframework-review
+    kind: upstream-reference
+    source: fluidframework-review
+    path: sources/github/fluidframework-review/ORIGINAL/.claude/skills/review/SKILL.md
+    maturity: S1
+    role: benchmark and high-confidence review protocol
+  - id: local-code-review
+    kind: local
+    path: governance/review/code-review.md
+    maturity: S1
+    role: C++/Qt output and severity adapter
+  - id: local-architecture-review
+    kind: local
+    path: governance/review/architecture-review.md
+    maturity: S1
+    role: architecture consistency and evolution review
+default_composition: [local-code-review, addy.code-review-and-quality, fluidframework-review]

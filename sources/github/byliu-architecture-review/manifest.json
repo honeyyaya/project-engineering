@@ -1,0 +1,27 @@
+{
+  "source_id": "byliu-architecture-review",
+  "commit": "0ca9a4946c50e1dba4737bb4ea75a06ad658959e",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_mode": "100644",
+      "git_blob_sha1": "14fac913ccf80234b1848540089a3bbcb6e5283d",
+      "sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
+      "bytes": 1056
+    },
+    {
+      "path": "README.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "f779acbe9fa5369bcc24fcb387f3c9835db611b5",
+      "sha256": "de6ed28d20261642903055e0e496d6d35ace24e0921ece2942d25a3d1f066c20",
+      "bytes": 4062
+    },
+    {
+      "path": "SKILL.md",
+      "git_mode": "100644",
+      "git_blob_sha1": "220e2fba035a4f61f0fb2a3546bb254d8401a4ff",
+      "sha256": "32043ef47d3cbb1f35dd0e1b000629a13791d8e6b212a8907897a883de4f2a1b",
+      "bytes": 9256
+    }
+  ]
+}

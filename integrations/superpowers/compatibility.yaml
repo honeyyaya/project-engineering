@@ -1,0 +1,16 @@
+schema_version: "0.1"
+integration: superpowers
+foundation_rule: "Superpowers owns development flow; Project Engineering owns constraints, standards, profiles, gates and evidence."
+load_order: [project-context, profile, local-standards, workflow-routing, superpowers-component, quality-gate, evidence-record]
+harness_matrix:
+  codex: {native_worktree: true, native_subagents: true, git_push: permissioned, adaptation: use-native-when-available}
+  claude: {native_worktree: true, native_subagents: true, git_push: permissioned, adaptation: use-native-when-available}
+  cursor: {native_worktree: true, native_subagents: true, git_push: permissioned, adaptation: use-native-when-available}
+  gemini: {native_worktree: conditional, native_subagents: true, git_push: permissioned, adaptation: verify-capabilities}
+  opencode: {native_worktree: conditional, native_subagents: conditional, git_push: permissioned, adaptation: verify-capabilities}
+  copilot: {native_worktree: conditional, native_subagents: conditional, git_push: permissioned, adaptation: verify-capabilities}
+rules:
+  - {id: local-constraints-win, rule: "Superpowers 流程不得覆盖 Profile 中的 C++、Qt/QML、ABI、线程、安全和兼容性约束。"}
+  - {id: one-primary-flow, rule: "重复职责只调用一个 primary；其他来源只用于 compose、reference 或 evaluation。"}
+  - {id: native-capability-preference, rule: "Harness 已提供工作树、子 Agent 或分支生命周期时，优先使用 Harness 原生能力。"}
+  - {id: evidence-required, rule: "宣称完成之前必须通过本地 Test/Review Gate 并留下可复核证据。"}

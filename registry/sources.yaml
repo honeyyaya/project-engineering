@@ -1,0 +1,87 @@
+schema_version: "0.1"
+collected_at: "2026-09-09"
+sources:
+  - id: superpowers
+    repository: obra/superpowers
+    url: https://github.com/obra/superpowers
+    license: MIT
+    default_branch: main
+    audited_commit: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
+    audited_commit_date: "2026-08-12"
+    maturity: S1
+    role: workflow-foundation
+    snapshot: sources/github/superpowers/ORIGINAL
+    manifest: sources/github/superpowers/manifest.json
+    components:
+      - brainstorming
+      - writing-plans
+      - test-driven-development
+      - systematic-debugging
+      - verification-before-completion
+      - requesting-code-review
+      - subagent-driven-development
+      - using-git-worktrees
+    strengths: [workflow-orchestration, TDD, debugging, planning, verification, git]
+    overlaps: [addy-agent-skills/planning, addy-agent-skills/testing, addy-agent-skills/debugging]
+    adoption_decision: foundation-adopt
+    evidence: sources/github/superpowers/audit.md
+
+  - id: addy-agent-skills
+    repository: addyosmani/agent-skills
+    url: https://github.com/addyosmani/agent-skills
+    license: MIT
+    default_branch: main
+    audited_commit: 6ca0cd7db39b41b1c37e26d335c507ee92382c6d
+    audited_commit_date: "2026-09-08"
+    maturity: S1
+    role: quality
+    snapshot: sources/github/addy-agent-skills/ORIGINAL
+    manifest: sources/github/addy-agent-skills/manifest.json
+    components:
+      - code-review-and-quality
+      - api-and-interface-design
+      - planning-and-task-breakdown
+      - debugging-and-error-recovery
+      - performance-optimization
+      - security-and-hardening
+      - documentation-and-adrs
+      - test-driven-development
+    strengths: [quality-gates, code-review, API-design, security, performance, evals]
+    overlaps: [superpowers/planning, superpowers/testing, superpowers/debugging]
+    adoption_decision: component-adopt
+    evidence: sources/github/addy-agent-skills/audit.md
+
+  - id: fluidframework-review
+    repository: microsoft/FluidFramework
+    url: https://github.com/microsoft/FluidFramework
+    license: MIT
+    default_branch: main
+    audited_commit: d60dcd5e892982faa70bdca9d09b5a7b08f28891
+    audited_commit_date: "2026-09-08"
+    maturity: S1
+    role: reference
+    snapshot: sources/github/fluidframework-review/ORIGINAL
+    manifest: sources/github/fluidframework-review/manifest.json
+    snapshot_scope: ".claude/skills/review/** plus repository license and notices"
+    components: [review, review/api-conventions]
+    strengths: [high-confidence-review, API-conventions, correctness, tests, performance, security]
+    overlaps: [addy-agent-skills/code-review-and-quality, local-code-review]
+    adoption_decision: benchmark
+    evidence: sources/github/fluidframework-review/audit.md
+
+  - id: byliu-architecture-review
+    repository: byliu-labs/claude-skill-architecture-review
+    url: https://github.com/byliu-labs/claude-skill-architecture-review
+    license: MIT
+    default_branch: master
+    audited_commit: 0ca9a4946c50e1dba4737bb4ea75a06ad658959e
+    audited_commit_date: "2026-02-12"
+    maturity: S1
+    role: reference
+    snapshot: sources/github/byliu-architecture-review/ORIGINAL
+    manifest: sources/github/byliu-architecture-review/manifest.json
+    components: [architecture-review]
+    strengths: [greenfield-question, forcing-functions, pivot-analysis, architecture-decision]
+    overlaps: [local-architecture-analysis, local-architecture-review]
+    adoption_decision: reference
+    evidence: sources/github/byliu-architecture-review/audit.md
